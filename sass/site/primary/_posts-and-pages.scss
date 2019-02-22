@@ -177,20 +177,21 @@
 
 	.entry-content,
 	.entry-summary {
-		//max-width: calc(100% - (2 * #{ $size__spacing-unit }));
-		//margin: 0 $size__spacing-unit;
+		max-width: calc(100% - (2 * #{ $size__spacing-unit }));
+		margin: 0 $size__spacing-unit;
 
 		@include media(tablet) {
-			//max-width: 80%;
-			//margin: 0 10%;
-			//padding: 0 60px;
-			margin: 0 $size__site-margins;
+			max-width: 80%;
+			margin: 0 10%;
+			padding: 0 60px;
 		}
 	}
 
 	.entry-content {
 
-		p { word-wrap: break-word; }
+		p {
+			word-wrap: break-word;
+		}
 
 		.more-link {
 			@include link-transition;
