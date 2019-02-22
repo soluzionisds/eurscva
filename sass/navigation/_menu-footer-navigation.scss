@@ -1,0 +1,20 @@
+/** === Footer menu === */
+
+.footer-navigation {
+	margin: auto 0 auto auto;
+	display: inline;
+
+	& > div {	display: inline; }
+
+	.footer-menu {
+
+		display: inline;
+		padding-left: 0;
+
+		li {
+			display: inline;
+			margin-right: 0.5rem;
+		}
+	}
+
+}

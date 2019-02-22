@@ -1,0 +1,28 @@
+
+.site-home-block {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		position: relative;
+		flex-basis: 25%;
+		min-height: 13rem;
+	}
+
+	&__link {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__title {
+		display: block;
+		color: #FFF;
+		padding: 1.5rem;
+		font-size: $font__size-lg;
+		font-weight: 600;
+	}
+}
