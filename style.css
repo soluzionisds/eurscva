@@ -1,10 +1,11 @@
 @charset "UTF-8";
 /*
 Theme Name: Eurscva
+Theme URI: https://github.com/soluzionisds/eurscva.git
 Author: sebastiano.riva (office)
 Author URI: http://www.sebastianoriva.com/
 Description: Theme developed for European school of Varese. Theme start from WordPress Twenty Nineteen v.1.2.
-Version: 1.0
+Version: 1.1
 Text Domain: eurscva
 */
 /*--------------------------------------------------------------
@@ -16,6 +17,7 @@ Files modified:
 \wp-content\themes\eurscva\sass\navigation\_navigation.scss
 \wp-content\themes\eurscva\sass\navigation\_menu-footer-navigation.scss
 \wp-content\themes\eurscva\sass\site\header\_site-header.scss
+\wp-content\themes\eurscva\sass\site\header\_site-featured-image.scss
 \wp-content\themes\eurscva\sass\site\footer\_site-footer.scss
 \wp-content\themes\eurscva\sass\site\primary\_posts-and-pages.scss
 \wp-content\themes\eurscva\sass\variables-site\_structure.scss
@@ -1032,6 +1034,9 @@ a:focus {
   background-color: #FFF;
 }
 
+.mega-menu-wrap .mega-mobile-parent-nav-menu-item {
+  display: none;
+}
 .mega-menu-wrap .mega-menu .mega-menu-item:last-child {
   margin-right: 0 !important;
 }
@@ -1474,7 +1479,7 @@ a:focus {
   /* Need relative positioning to properly align layers. */
   position: relative;
   /* Add text shadow to text, to increase readability. */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  /* Show Eurscva header */
   /* Set white text color when featured image is set. */
   /* add focus state to social media icons */
   /* Entry header */
@@ -1492,6 +1497,11 @@ a:focus {
   /* When image filters are inactive, a black overlay is added. */
   /* Fourth layer: overlay. */
   /* Fifth layer: readability overlay */
+}
+.site-header.featured-image .site-branding-container {
+  position: relative;
+  background-color: #FFF;
+  z-index: 10;
 }
 .site-header.featured-image .site-branding .site-title,
 .site-header.featured-image .site-branding .site-description,
@@ -2500,8 +2510,8 @@ a:focus {
   background: #415577;
 }
 #colophon .widget-column .widget .textwidget p {
-  font-size: 0.7111111111em;
-  line-height: 1.125em;
+  font-size: 0.8888888889em;
+  line-height: 1.6875em;
   color: #333;
 }
 @media only screen and (min-width: 1168px) {

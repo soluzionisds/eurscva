@@ -17,8 +17,11 @@
   background-color: #FFF;
 }
 
-.mega-menu-wrap .mega-menu .mega-menu-item {
-  &:last-child { margin-right: 0 !important; }
+.mega-menu-wrap {
+  .mega-mobile-parent-nav-menu-item { display: none; }
+  .mega-menu .mega-menu-item {
+    &:last-child { margin-right: 0 !important; }
+  }
 }
 
 //@import "menu-main-navigation";
