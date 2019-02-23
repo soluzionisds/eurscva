@@ -5,13 +5,47 @@
 
 	&__item {
 		position: relative;
-		flex-basis: 25%;
-		min-height: 13rem;
+		overflow: hidden;
+		flex-basis: 100%;
+		min-height: 15rem;
+
+		@include media(tablet) { flex-basis: 25%; }
+	}
+
+	&__image {
+		position: absolute;
+		height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+
+		&:hover {
+			-ms-transform: scale(1.2);
+	    -moz-transform: scale(1.2);
+	    -webkit-transform: scale(1.2);
+	    -o-transform: scale(1.2);
+	    transform: scale(1.2);
+		}
+		&:before {
+			content: "";
+	    display: block;
+			position: absolute;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    width: 100%;
+	    background-color: rgba(0,93,185,0.70);
+		}
 	}
 
 	&__link {
 		position: absolute;
 		display: block;
+		z-index: 2;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -19,7 +53,9 @@
 	}
 
 	&__title {
+		position: absolute;
 		display: block;
+		z-index: 1;
 		color: #FFF;
 		padding: 1.5rem;
 		font-size: $font__size-lg;

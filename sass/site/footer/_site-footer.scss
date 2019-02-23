@@ -1,6 +1,9 @@
 /* Site footer */
 
-.site-footer { background-color: $color__background-hr; }
+.site-footer {
+	border-top: 1px solid $color__background-hr;
+	background-color: $color__background-pre;
+}
 
 #colophon {
 
@@ -20,7 +23,7 @@
 			width: 100%;
 			.widget-title {
 				&:before { background: $color__text-blu-alternative; }
-				color: $color__text-blu-alternative;
+				color: $color__background-button;
 				font-size: $font__size-md;
 				font-weight: 600;
 			}

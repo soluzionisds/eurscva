@@ -79,6 +79,8 @@ function twentynineteen_custom_colors_css() {
 		 * - buttons
 		 * - WP Block Button
 		 * - Blocks
+		 * - Top Header
+		 * - Block Overlay
 		 */
 		.image-filters-enabled .site-header.featured-image .site-featured-image:before,
 		.image-filters-enabled .site-header.featured-image .site-featured-image:after,
@@ -93,8 +95,9 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > *[class^="wp-block-"] .has-primary-background-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color.has-primary-background-color,
-		.entry .entry-content .wp-block-file .wp-block-file__button {
-			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+		.entry .entry-content .wp-block-file .wp-block-file__button,
+		.site-top-header {
+			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		/*
@@ -109,6 +112,7 @@ function twentynineteen_custom_colors_css() {
 		 * - Comment edit link hover
 		 * - Site Footer Link hover
 		 * - Widget links
+		 * - Footer widget titles
 		 */
 		a,
 		a:visited,
@@ -127,8 +131,9 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > .has-primary-color,
 		.entry .entry-content > *[class^="wp-block-"] .has-primary-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color,
-		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p {
-			color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p,
+		#colophon .widget-column .widget .widget-title {
+			color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		/*
@@ -139,7 +144,7 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content blockquote,
 		.entry .entry-content .wp-block-quote:not(.is-large),
 		.entry .entry-content .wp-block-quote:not(.is-style-large) {
-			border-left-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+			border-left-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		/*
@@ -162,11 +167,11 @@ function twentynineteen_custom_colors_css() {
 		input[type="datetime-local"]:focus,
 		input[type="color"]:focus,
 		textarea:focus {
-			border-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+			border-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		.gallery-item > div > a:focus {
-			box-shadow: 0 0 0 2px hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+			box-shadow: 0 0 0 2px hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		/* Hover colors */
@@ -226,16 +231,16 @@ function twentynineteen_custom_colors_css() {
 		.editor-block-list__layout .editor-block-list__block .wp-block-button.is-style-outline:focus .wp-block-button__link:not(.has-text-color),
 		.editor-block-list__layout .editor-block-list__block .wp-block-button.is-style-outline:active .wp-block-button__link:not(.has-text-color),
 		.editor-block-list__layout .editor-block-list__block .wp-block-file .wp-block-file__textlink {
-			color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+			color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		.editor-block-list__layout .editor-block-list__block .wp-block-quote:not(.is-large):not(.is-style-large),
 		.editor-styles-wrapper .editor-block-list__layout .wp-block-freeform blockquote {
-			border-left: 2px solid hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+			border-left: 2px solid hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		.editor-block-list__layout .editor-block-list__block .wp-block-pullquote.is-style-solid-color:not(.has-background-color) {
-			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		.editor-block-list__layout .editor-block-list__block .wp-block-file .wp-block-file__button,
@@ -243,7 +248,7 @@ function twentynineteen_custom_colors_css() {
 		.editor-block-list__layout .editor-block-list__block .wp-block-button:not(.is-style-outline) .wp-block-button__link:active,
 		.editor-block-list__layout .editor-block-list__block .wp-block-button:not(.is-style-outline) .wp-block-button__link:focus,
 		.editor-block-list__layout .editor-block-list__block .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
-			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
+			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
 		/* Hover colors */
