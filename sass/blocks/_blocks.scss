@@ -692,10 +692,13 @@
 
 	//! File
 	.wp-block-file {
+		padding: 0 1rem;
 		font-family: $font__heading;
+		background-color: $color__background-pre;
+		border-radius: 5px;
 
 		.wp-block-file__button {
-			display: table;
+			display: inline-block;
 			@include button-transition;
 			border: none;
 			border-radius: 5px;
@@ -707,8 +710,7 @@
 			font-weight: bold;
 			padding: ($size__spacing-unit * .75) $size__spacing-unit;
 			color: #fff;
-			margin-left: 0;
-			margin-top: calc(0.75 * #{$size__spacing-unit});
+			margin: calc(0.75 * #{$size__spacing-unit}) 1rem;
 
 			@include media(desktop) {
 				font-size: $font__size-base;

@@ -3271,10 +3271,13 @@ a:focus {
   border-color: #767676;
 }
 .entry .entry-content .wp-block-file {
+  padding: 0 1rem;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: #eee;
+  border-radius: 5px;
 }
 .entry .entry-content .wp-block-file .wp-block-file__button {
-  display: table;
+  display: inline-block;
   transition: background 150ms ease-in-out;
   border: none;
   border-radius: 5px;
@@ -3286,8 +3289,7 @@ a:focus {
   font-weight: bold;
   padding: 0.75rem 1rem;
   color: #fff;
-  margin-left: 0;
-  margin-top: calc(0.75 * 1rem);
+  margin: calc(0.75 * 1rem) 1rem;
 }
 @media only screen and (min-width: 1168px) {
   .entry .entry-content .wp-block-file .wp-block-file__button {

@@ -219,7 +219,7 @@ add_action( 'after_setup_theme', 'twentynineteen_content_width', 0 );
 function twentynineteen_scripts() {
 	wp_enqueue_style( 'twentynineteen-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
-	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
+	//wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
 	if ( has_nav_menu( 'menu-1' ) ) {
 		//wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );

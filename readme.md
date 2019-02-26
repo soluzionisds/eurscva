@@ -1,10 +1,10 @@
-### Eurscva Theme
+## Eurscva Theme
 
 Theme developed for European school of Varese. Theme start from WordPress Twenty Nineteen v.1.2.
 
-### FILES CHANGES from Twenty Nineteen v.1.2
+## FILES CHANGES from Twenty Nineteen v.1.2
 
-## Files modified:
+### Files modified:
 
 `\wp-content\themes\eurscva\sass\blocks\_blocks.scss`  
 `\wp-content\themes\eurscva\sass\navigation\_navigation.scss`  
@@ -25,7 +25,7 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 `\wp-content\themes\eurscva\template-parts\content\content-page.php`  
 `\wp-content\themes\eurscva\inc\color-patterns.php`  
 
-## New files:
+### New files:
 
 `\wp-content\themes\eurscva\sass\blocks\_home-blocks.scss`
 
