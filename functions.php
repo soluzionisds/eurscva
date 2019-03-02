@@ -58,6 +58,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 			array(
 				'menu-1' => __( 'Primary', 'twentynineteen' ),
 				'footer' => __( 'Footer Menu', 'twentynineteen' ),
+				// [changed] disabled
 				//'social' => __( 'Social Links Menu', 'twentynineteen' ),
 			)
 		);
@@ -79,8 +80,8 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 
 		/**
 		 * Add support for core custom logo.
-		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
+		 * // [changed] removed fixed dimendions
 		 */
 		add_theme_support(
 			'custom-logo',
@@ -105,6 +106,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
+		// [changed] disabled
 		//add_editor_style( 'style-editor.css' );
 
 		// Add custom editor font sizes.
@@ -138,6 +140,10 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 			)
 		);
 
+		$default_hue     = twentynineteen_get_default_hue();
+		$saturation      = apply_filters( 'twentynineteen_custom_colors_saturation', 100 );
+		$lightness       = apply_filters( 'twentynineteen_custom_colors_lightness', 33 );
+		$lightness_hover = apply_filters( 'twentynineteen_custom_colors_lightness_hover', 23 );
 		// Editor color palette.
 		add_theme_support(
 			'editor-color-palette',
@@ -145,12 +151,12 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 				array(
 					'name'  => __( 'Primary', 'twentynineteen' ),
 					'slug'  => 'primary',
-					'color' => twentynineteen_hsl_hex( 'default' === get_theme_mod( 'primary_color' ) ? 199 : get_theme_mod( 'primary_color_hue', 199 ), 100, 33 ),
+					'color' => twentynineteen_hsl_hex( 'default' === get_theme_mod( 'primary_color' ) ? $default_hue : get_theme_mod( 'primary_color_hue', $default_hue ), $saturation, $lightness ),
 				),
 				array(
 					'name'  => __( 'Secondary', 'twentynineteen' ),
 					'slug'  => 'secondary',
-					'color' => twentynineteen_hsl_hex( 'default' === get_theme_mod( 'primary_color' ) ? 199 : get_theme_mod( 'primary_color_hue', 199 ), 100, 23 ),
+					'color' => twentynineteen_hsl_hex( 'default' === get_theme_mod( 'primary_color' ) ? $default_hue : get_theme_mod( 'primary_color_hue', $default_hue ), $saturation, 23 ),
 				),
 				array(
 					'name'  => __( 'Dark Gray', 'twentynineteen' ),
@@ -219,9 +225,11 @@ add_action( 'after_setup_theme', 'twentynineteen_content_width', 0 );
 function twentynineteen_scripts() {
 	wp_enqueue_style( 'twentynineteen-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
+	// [changed] disabled
 	//wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
 	if ( has_nav_menu( 'menu-1' ) ) {
+		// [changed] disabled
 		//wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );
 		//wp_enqueue_script( 'eurscva-sticky', get_theme_file_uri( '/js/sticky.js' ), array(), '1.1', true );
 		wp_enqueue_script( 'twentynineteen-touch-navigation', get_theme_file_uri( '/js/touch-keyboard-navigation.js' ), array(), '1.1', true );
@@ -274,15 +282,15 @@ add_action( 'enqueue_block_editor_assets', 'twentynineteen_editor_customizer_sty
 function twentynineteen_colors_css_wrap() {
 
 	// Only include custom colors in customizer or frontend.
-	if ( ( ! is_customize_preview() && 'default' === get_theme_mod( 'primary_color', 'default' ) ) || is_admin() ) {
+	if ( 'default' === get_theme_mod( 'primary_color', 'default' ) && ! twentynineteen_has_custom_default_hue() ) {
 		return;
 	}
 
 	require_once get_parent_theme_file_path( '/inc/color-patterns.php' );
 
-	$primary_color = 199;
+	$primary_color = twentynineteen_get_default_hue();
 	if ( 'default' !== get_theme_mod( 'primary_color', 'default' ) ) {
-		$primary_color = get_theme_mod( 'primary_color_hue', 199 );
+		$primary_color = get_theme_mod( 'primary_color_hue', $primary_color );
 	}
 	?>
 
@@ -292,6 +300,11 @@ function twentynineteen_colors_css_wrap() {
 	<?php
 }
 add_action( 'wp_head', 'twentynineteen_colors_css_wrap' );
+
+/**
+ * Default color filters.
+ */
+require get_template_directory() . '/inc/color-filters.php';
 
 /**
  * SVG Icons class.
@@ -324,7 +337,8 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Define Blocks
+ * [changed] disabled
+ * Define Blocks for Homepage
  */
 function eurscva_blocks() {
   register_post_type( 'home-blocks',

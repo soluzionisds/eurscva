@@ -7,6 +7,7 @@
  * @since 1.0.0
  */
 ?>
+<!-- [changed] added class -->
 <div class="site-branding site-branding--header" id="navhead">
 
 	<?php if ( has_custom_logo() ) : ?>
@@ -14,13 +15,17 @@
 	<?php endif; ?>
 	<?php $blog_info = get_bloginfo( 'name' ); ?>
 	<?php if ( ! empty( $blog_info ) ) : ?>
-		<?php if ( ! has_custom_logo() ) : ?>
+		<?php
+			// [changed] if review
+			if ( ! has_custom_logo() ) :
+		?>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php endif; ?>
 	<?php endif; ?>
 
 	<?php
 	$description = get_bloginfo( 'description', 'display' );
+	// [changed] if review
 	if ( $description || is_customize_preview() and ! has_custom_logo() ) :
 		?>
 			<p class="site-description">
@@ -41,8 +46,9 @@
 		</nav><!-- #site-navigation -->
 	<?php endif; ?>
 
-	<!-- disabled -->
-	<?php if ( has_nav_menu( 'social' ) ) : ?>
+	<?php
+		// [changed] disabled
+		/*if ( has_nav_menu( 'social' ) ) : ?>
 		<nav class="social-navigation" aria-label="<?php esc_attr_e( 'Social Links Menu', 'twentynineteen' ); ?>">
 			<?php
 			wp_nav_menu(
@@ -53,8 +59,7 @@
 					'link_after'     => '</span>' . twentynineteen_get_icon_svg( 'link' ),
 					'depth'          => 1,
 				)
-			);
-			?>
+			);?>
 		</nav><!-- .social-navigation -->
-	<?php endif; ?>
+	<?php endif;*/ ?>
 </div><!-- .site-branding -->

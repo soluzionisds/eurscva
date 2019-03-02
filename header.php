@@ -26,8 +26,11 @@
 		<header id="masthead" class="<?php echo is_singular() && twentynineteen_can_show_post_thumbnail() ? 'site-header featured-image' : 'site-header'; ?>">
 
 			<div class="site-branding-container">
-				<?php	get_template_part( 'template-parts/header/top', 'header' ); ?>
-				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
+				<?php
+					// [changed] edde top header inclusion 
+					get_template_part( 'template-parts/header/top', 'header' );
+					get_template_part( 'template-parts/header/site', 'branding' );
+				?>
 			</div><!-- .layout-wrap -->
 
 			<?php if ( is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>
@@ -38,9 +41,9 @@
 						$discussion = ! is_page() && twentynineteen_can_show_post_thumbnail() ? twentynineteen_get_discussion_data() : null;
 
 						$classes = 'entry-header';
-						if ( ! empty( $discussion ) && absint( $discussion->responses ) > 0 ) {
-							$classes = 'entry-header has-discussion';
-						}
+					if ( ! empty( $discussion ) && absint( $discussion->responses ) > 0 ) {
+						$classes = 'entry-header has-discussion';
+					}
 					?>
 					<div class="<?php echo $classes; ?>">
 						<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>

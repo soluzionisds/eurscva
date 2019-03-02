@@ -18,6 +18,7 @@
 	<footer id="colophon" class="site-footer">
 		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
 		<div class="site-info">
+			<!-- [changed] site-info review -->
 			<div class="site-info__left">
 				<p>Project &amp; Infrastructure by
 					<a href="http://www.sebastianoriva.com" target="_blank" title="sebastiano.riva (office)">

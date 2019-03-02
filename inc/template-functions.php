@@ -199,7 +199,7 @@ function twentynineteen_get_discussion_data() {
  * @return string More link for hidden menu items.
  */
 /*
-disabled
+[changed] disabled
 function twentynineteen_add_ellipses_to_nav( $nav_menu, $args ) {
 
 	if ( 'menu-1' === $args->theme_location ) :

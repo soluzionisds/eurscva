@@ -3,6 +3,7 @@
  * @package WordPress
  * @subpackage Eurscva
  * @since 1.0.0
+ * This template load top header
  */
 ?>
 <div class="site-top-header">
