@@ -5,13 +5,20 @@
 	margin: 32px 0;
 	max-width: 100%;
 
-	&:first-child { margin: 0; }
+	&:first-child {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 
-	//@include postContentMaxWidth();
-
+	/*
+	@include postContentMaxWidth();
 	@include media(tablet) {
 		margin: 32px 0;
-	}
+	}*/
+
+	margin-left: $size__spacing-unit;
+	margin-right: $size__spacing-unit;
+	@include media(tablet) { margin: 32px 0; }
 
 	> *:first-child {
 		margin-top: 0;

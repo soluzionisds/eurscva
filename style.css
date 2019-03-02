@@ -997,11 +997,18 @@ a:focus {
   background-color: #FFF;
 }
 
+#mega-menu-wrap-menu-1 .mega-menu-toggle {
+  border-radius: 0;
+}
+
 .mega-menu-wrap .mega-mobile-parent-nav-menu-item {
   display: none;
 }
 .mega-menu-wrap .mega-menu .mega-menu-item:last-child {
   margin-right: 0 !important;
+}
+.mega-menu-wrap .mega-toggle-label {
+  margin: 0 0 0 6px;
 }
 
 /** === Footer menu === */
@@ -1342,6 +1349,12 @@ a:focus {
 .site-branding {
   display: flex;
   color: #767676;
+  margin: 0 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .site-branding {
+    margin: 0 calc(10% + 30px);
+  }
 }
 .site-branding--top-header {
   padding: 0.6rem 0rem;
@@ -1352,11 +1365,6 @@ a:focus {
 .site-branding .main-navigation {
   align-self: center;
   margin: auto 0 auto auto;
-}
-@media only screen and (min-width: 768px) {
-  .site-branding {
-    margin: 0 calc(10% + 30px);
-  }
 }
 
 .site-logo {
@@ -1379,10 +1387,15 @@ a:focus {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   transition: box-shadow $background_transition ease-in-out;*/
   display: block;
-  max-width: 100px;
+  max-width: 150px;
   /*&:hover,
   &:active,
   &:focus { box-shadow: 0 0 0 2px rgba(0, 0, 0, 1); }*/
+}
+@media only screen and (min-width: 768px) {
+  .site-logo .custom-logo-link {
+    max-width: 100px;
+  }
 }
 .site-logo .custom-logo-link .custom-logo {
   min-height: inherit;
@@ -1571,6 +1584,16 @@ a:focus {
   .site-header.featured-image .site-featured-image .entry-header {
     margin-left: calc(10% + 30px);
     margin-right: calc(10% + 30px);
+  }
+}
+.site-header.featured-image .site-featured-image .entry-header .entry-title {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .site-header.featured-image .site-featured-image .entry-header .entry-title {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .site-header.featured-image .site-featured-image .entry-header .entry-title:before {
@@ -2604,10 +2627,18 @@ a:focus {
 .entry .entry-summary > * {
   margin: 32px 0;
   max-width: 100%;
+  /*
+  @include postContentMaxWidth();
+  @include media(tablet) {
+  	margin: 32px 0;
+  }*/
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .entry .entry-content > *:first-child,
 .entry .entry-summary > *:first-child {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
   .entry .entry-content > *,

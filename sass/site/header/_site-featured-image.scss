@@ -111,16 +111,19 @@
 			margin-right: 0;
 
 			@include media (tablet) {
-
 				margin-left: $size__site-margins;
 				margin-right: $size__site-margins;
 			}
 
 			.entry-title {
-
-				&:before {
-					background: $color__background-body;
+				margin-left: $size__spacing-unit;
+				margin-right: $size__spacing-unit;
+				@include media (tablet) {
+					margin-left: 0;
+					margin-right: 0;
 				}
+
+				&:before { background: $color__background-body; }
 			}
 
 			/* Entry meta */

@@ -17,11 +17,13 @@
   background-color: #FFF;
 }
 
+#mega-menu-wrap-menu-1 .mega-menu-toggle { border-radius: 0; }
 .mega-menu-wrap {
   .mega-mobile-parent-nav-menu-item { display: none; }
   .mega-menu .mega-menu-item {
     &:last-child { margin-right: 0 !important; }
   }
+  .mega-toggle-label { margin: 0 0 0 6px; }
 }
 
 //@import "menu-main-navigation";

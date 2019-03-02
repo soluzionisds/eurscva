@@ -3,6 +3,7 @@
  * @package WordPress
  * @subpackage Eurscva
  * @since 1.0.0
+ * This template works with custom field: "color" and "link" this fields needs to be create on CMS
  */
 ?>
 

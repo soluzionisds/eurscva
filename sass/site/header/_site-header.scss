@@ -47,6 +47,11 @@
 
 .site-branding {
 	display: flex;
+	color: $color__text-light;
+
+	margin: 0 $size__spacing-unit;
+	@include media(tablet) { margin: 0 $size__site-margins; }
+
 	&--top-header {
 		padding: 0.6rem 0rem;
 	}
@@ -58,10 +63,7 @@
 		margin: auto 0 auto auto;
 	}
 
-	color: $color__text-light;
 	//position: relative;
-
-	@include media(tablet) { margin: 0 $size__site-margins; }
 }
 
 // Site logo
@@ -90,7 +92,9 @@
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 		transition: box-shadow $background_transition ease-in-out;*/
 		display: block;
-		max-width: 100px;
+		max-width: 150px;
+
+		@include media(tablet) { max-width: 100px; }
 
 		.custom-logo {
 			min-height: inherit;
