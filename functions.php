@@ -58,8 +58,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 			array(
 				'menu-1' => __( 'Primary', 'twentynineteen' ),
 				'footer' => __( 'Footer Menu', 'twentynineteen' ),
-				// [changed] disabled
-				//'social' => __( 'Social Links Menu', 'twentynineteen' ),
+				'social' => __( 'Social Links Menu', 'twentynineteen' ),
 			)
 		);
 
@@ -80,16 +79,16 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 
 		/**
 		 * Add support for core custom logo.
+		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
-		 * // [changed] removed fixed dimendions
 		 */
 		add_theme_support(
 			'custom-logo',
 			array(
 				'height'      => 190,
 				'width'       => 190,
-				'flex-width'  => true,
-				'flex-height' => true,
+				'flex-width'  => false,
+				'flex-height' => false,
 			)
 		);
 
@@ -106,8 +105,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 		add_theme_support( 'editor-styles' );
 
 		// Enqueue editor styles.
-		// [changed] disabled
-		//add_editor_style( 'style-editor.css' );
+		add_editor_style( 'style-editor.css' );
 
 		// Add custom editor font sizes.
 		add_theme_support(
@@ -225,13 +223,10 @@ add_action( 'after_setup_theme', 'twentynineteen_content_width', 0 );
 function twentynineteen_scripts() {
 	wp_enqueue_style( 'twentynineteen-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
-	// [changed] disabled
-	//wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
+	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
 	if ( has_nav_menu( 'menu-1' ) ) {
-		// [changed] disabled
-		//wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );
-		//wp_enqueue_script( 'eurscva-sticky', get_theme_file_uri( '/js/sticky.js' ), array(), '1.1', true );
+		wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.1', true );
 		wp_enqueue_script( 'twentynineteen-touch-navigation', get_theme_file_uri( '/js/touch-keyboard-navigation.js' ), array(), '1.1', true );
 	}
 
@@ -281,7 +276,7 @@ add_action( 'enqueue_block_editor_assets', 'twentynineteen_editor_customizer_sty
  */
 function twentynineteen_colors_css_wrap() {
 
-	// Only include custom colors in customizer or frontend.
+	// Only bother if we haven't customized the color.
 	if ( 'default' === get_theme_mod( 'primary_color', 'default' ) && ! twentynineteen_has_custom_default_hue() ) {
 		return;
 	}
@@ -335,27 +330,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-/**
- * [changed] disabled
- * Define Blocks for Homepage
- */
-function eurscva_blocks() {
-  register_post_type( 'home-blocks',
-    array(
-      'labels' => array(
-      	'name' => __( 'Home Blocks' ),
-      	'singular_name' => __( 'Home Block' ),
-      ),
-      'public' => true,
-      'has_archive' => false,
-			'publicly_queryable' => false,
-			//'show_in_menu '=> true,
-			'menu_icon' => 'dashicons-screenoptions',
-			'menu_position' => 20,
-      'rewrite' => array('slug' => 'block'),
-			'supports' => array( 'title', 'thumbnail', 'custom-fields', 'author' )
-    )
-  );
-}
-add_action( 'init', 'eurscva_blocks' );

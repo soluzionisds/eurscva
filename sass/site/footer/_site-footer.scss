@@ -1,10 +1,5 @@
 /* Site footer */
 
-.site-footer {
-	border-top: 1px solid $color__background-hr;
-	background-color: $color__background-pre;
-}
-
 #colophon {
 
 	.widget-area,
@@ -21,33 +16,19 @@
 		flex-wrap: wrap;
 		.widget {
 			width: 100%;
-			.widget-title {
-				&:before { background: $color__text-blu-alternative; }
-				color: $color__background-button;
-				font-size: $font__size-md;
-				font-weight: 600;
-			}
-			.textwidget {
-				p {
-					font-size: $font__size-sm;
-					line-height: $font__size-lg;
-					color: #333;
-				}
-			}
 			@include media(desktop) {
-				margin-right: calc(1 * #{$size__spacing-unit});
-				width: calc(33.3% - (1 * #{$size__spacing-unit}));
+				margin-right: calc(3 * #{$size__spacing-unit});
+				width: calc(50% - (3 * #{$size__spacing-unit}));
 			}
 		}
 	}
 
 	.site-info {
-		border-top: 1px solid #BBB;
 		color: $color__text-light;
-		display: flex;
 
 		a {
 			color: inherit;
+
 			&:hover {
 				text-decoration: none;
 				color: $color__link;
