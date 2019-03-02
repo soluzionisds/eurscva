@@ -1232,235 +1232,61 @@ input:lang(zh-CN)[type="submit"], .comment-navigation .nav-previous:lang(zh-CN),
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif;
 }
 
-body:lang(bn-BD), button:lang(bn-BD),
-input:lang(bn-BD),
-select:lang(bn-BD),
-optgroup:lang(bn-BD),
-textarea:lang(bn-BD), .author-description .author-link:lang(bn-BD),
-.comment-metadata:lang(bn-BD),
-.comment-reply-link:lang(bn-BD),
-.comments-title:lang(bn-BD),
-.comment-author .fn:lang(bn-BD),
-.discussion-meta-info:lang(bn-BD),
-.entry-meta:lang(bn-BD),
-.entry-footer:lang(bn-BD),
-.main-navigation:lang(bn-BD),
-.no-comments:lang(bn-BD),
-.not-found .page-title:lang(bn-BD),
-.error-404 .page-title:lang(bn-BD),
-.post-navigation .post-title:lang(bn-BD),
-.page-links:lang(bn-BD),
-.page-description:lang(bn-BD),
-.pagination .nav-links:lang(bn-BD),
-.sticky-post:lang(bn-BD),
-.site-title:lang(bn-BD),
-.site-info:lang(bn-BD),
-#cancel-comment-reply-link:lang(bn-BD),
-h1:lang(bn-BD),
-h2:lang(bn-BD),
-h3:lang(bn-BD),
-h4:lang(bn-BD),
-h5:lang(bn-BD),
-h6:lang(bn-BD), .page-title:lang(bn-BD), blockquote cite:lang(bn-BD), table:lang(bn-BD), .button:lang(bn-BD),
-input:lang(bn-BD)[type="button"],
-input:lang(bn-BD)[type="reset"],
-input:lang(bn-BD)[type="submit"], .comment-navigation .nav-previous:lang(bn-BD),
-.comment-navigation .nav-next:lang(bn-BD), .comment-list .pingback .comment-body:lang(bn-BD),
-.comment-list .trackback .comment-body:lang(bn-BD), .comment-list .pingback .comment-body .comment-edit-link:lang(bn-BD),
-.comment-list .trackback .comment-body .comment-edit-link:lang(bn-BD), .comment-form .comment-notes:lang(bn-BD),
-.comment-form label:lang(bn-BD), .widget_archive ul li:lang(bn-BD),
-.widget_categories ul li:lang(bn-BD),
-.widget_meta ul li:lang(bn-BD),
-.widget_nav_menu ul li:lang(bn-BD),
-.widget_pages ul li:lang(bn-BD),
-.widget_recent_comments ul li:lang(bn-BD),
-.widget_recent_entries ul li:lang(bn-BD),
-.widget_rss ul li:lang(bn-BD), .widget_tag_cloud .tagcloud:lang(bn-BD), .entry .entry-content .wp-block-button .wp-block-button__link:lang(bn-BD), .entry .entry-content .wp-block-archives li:lang(bn-BD),
-.entry .entry-content .wp-block-categories li:lang(bn-BD),
-.entry .entry-content .wp-block-latest-posts li:lang(bn-BD), .entry .entry-content .wp-block-verse:lang(bn-BD), .entry .entry-content .has-drop-cap:lang(bn-BD):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(bn-BD), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(bn-BD),
-.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(bn-BD),
-.entry .entry-content .wp-block-cover-image h2:lang(bn-BD),
-.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(bn-BD),
-.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(bn-BD),
-.entry .entry-content .wp-block-cover h2:lang(bn-BD), .entry .entry-content .wp-block-audio figcaption:lang(bn-BD),
-.entry .entry-content .wp-block-video figcaption:lang(bn-BD),
-.entry .entry-content .wp-block-image figcaption:lang(bn-BD),
-.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(bn-BD),
-.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(bn-BD), .entry .entry-content .wp-block-file:lang(bn-BD), .entry .entry-content .wp-block-file .wp-block-file__button:lang(bn-BD), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(bn-BD), .wp-caption-text:lang(bn-BD), .gallery-caption:lang(bn-BD) {
-  font-family: Arial, sans-serif;
-}
-
-body:lang(hi-IN), button:lang(hi-IN),
-input:lang(hi-IN),
-select:lang(hi-IN),
-optgroup:lang(hi-IN),
-textarea:lang(hi-IN), .author-description .author-link:lang(hi-IN),
-.comment-metadata:lang(hi-IN),
-.comment-reply-link:lang(hi-IN),
-.comments-title:lang(hi-IN),
-.comment-author .fn:lang(hi-IN),
-.discussion-meta-info:lang(hi-IN),
-.entry-meta:lang(hi-IN),
-.entry-footer:lang(hi-IN),
-.main-navigation:lang(hi-IN),
-.no-comments:lang(hi-IN),
-.not-found .page-title:lang(hi-IN),
-.error-404 .page-title:lang(hi-IN),
-.post-navigation .post-title:lang(hi-IN),
-.page-links:lang(hi-IN),
-.page-description:lang(hi-IN),
-.pagination .nav-links:lang(hi-IN),
-.sticky-post:lang(hi-IN),
-.site-title:lang(hi-IN),
-.site-info:lang(hi-IN),
-#cancel-comment-reply-link:lang(hi-IN),
-h1:lang(hi-IN),
-h2:lang(hi-IN),
-h3:lang(hi-IN),
-h4:lang(hi-IN),
-h5:lang(hi-IN),
-h6:lang(hi-IN), .page-title:lang(hi-IN), blockquote cite:lang(hi-IN), table:lang(hi-IN), .button:lang(hi-IN),
-input:lang(hi-IN)[type="button"],
-input:lang(hi-IN)[type="reset"],
-input:lang(hi-IN)[type="submit"], .comment-navigation .nav-previous:lang(hi-IN),
-.comment-navigation .nav-next:lang(hi-IN), .comment-list .pingback .comment-body:lang(hi-IN),
-.comment-list .trackback .comment-body:lang(hi-IN), .comment-list .pingback .comment-body .comment-edit-link:lang(hi-IN),
-.comment-list .trackback .comment-body .comment-edit-link:lang(hi-IN), .comment-form .comment-notes:lang(hi-IN),
-.comment-form label:lang(hi-IN), .widget_archive ul li:lang(hi-IN),
-.widget_categories ul li:lang(hi-IN),
-.widget_meta ul li:lang(hi-IN),
-.widget_nav_menu ul li:lang(hi-IN),
-.widget_pages ul li:lang(hi-IN),
-.widget_recent_comments ul li:lang(hi-IN),
-.widget_recent_entries ul li:lang(hi-IN),
-.widget_rss ul li:lang(hi-IN), .widget_tag_cloud .tagcloud:lang(hi-IN), .entry .entry-content .wp-block-button .wp-block-button__link:lang(hi-IN), .entry .entry-content .wp-block-archives li:lang(hi-IN),
-.entry .entry-content .wp-block-categories li:lang(hi-IN),
-.entry .entry-content .wp-block-latest-posts li:lang(hi-IN), .entry .entry-content .wp-block-verse:lang(hi-IN), .entry .entry-content .has-drop-cap:lang(hi-IN):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(hi-IN), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(hi-IN),
-.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(hi-IN),
-.entry .entry-content .wp-block-cover-image h2:lang(hi-IN),
-.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(hi-IN),
-.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(hi-IN),
-.entry .entry-content .wp-block-cover h2:lang(hi-IN), .entry .entry-content .wp-block-audio figcaption:lang(hi-IN),
-.entry .entry-content .wp-block-video figcaption:lang(hi-IN),
-.entry .entry-content .wp-block-image figcaption:lang(hi-IN),
-.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(hi-IN),
-.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(hi-IN), .entry .entry-content .wp-block-file:lang(hi-IN), .entry .entry-content .wp-block-file .wp-block-file__button:lang(hi-IN), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(hi-IN), .wp-caption-text:lang(hi-IN), .gallery-caption:lang(hi-IN) {
-  font-family: Arial, sans-serif;
-}
-
-body:lang(mr), button:lang(mr),
-input:lang(mr),
-select:lang(mr),
-optgroup:lang(mr),
-textarea:lang(mr), .author-description .author-link:lang(mr),
-.comment-metadata:lang(mr),
-.comment-reply-link:lang(mr),
-.comments-title:lang(mr),
-.comment-author .fn:lang(mr),
-.discussion-meta-info:lang(mr),
-.entry-meta:lang(mr),
-.entry-footer:lang(mr),
-.main-navigation:lang(mr),
-.no-comments:lang(mr),
-.not-found .page-title:lang(mr),
-.error-404 .page-title:lang(mr),
-.post-navigation .post-title:lang(mr),
-.page-links:lang(mr),
-.page-description:lang(mr),
-.pagination .nav-links:lang(mr),
-.sticky-post:lang(mr),
-.site-title:lang(mr),
-.site-info:lang(mr),
-#cancel-comment-reply-link:lang(mr),
-h1:lang(mr),
-h2:lang(mr),
-h3:lang(mr),
-h4:lang(mr),
-h5:lang(mr),
-h6:lang(mr), .page-title:lang(mr), blockquote cite:lang(mr), table:lang(mr), .button:lang(mr),
-input:lang(mr)[type="button"],
-input:lang(mr)[type="reset"],
-input:lang(mr)[type="submit"], .comment-navigation .nav-previous:lang(mr),
-.comment-navigation .nav-next:lang(mr), .comment-list .pingback .comment-body:lang(mr),
-.comment-list .trackback .comment-body:lang(mr), .comment-list .pingback .comment-body .comment-edit-link:lang(mr),
-.comment-list .trackback .comment-body .comment-edit-link:lang(mr), .comment-form .comment-notes:lang(mr),
-.comment-form label:lang(mr), .widget_archive ul li:lang(mr),
-.widget_categories ul li:lang(mr),
-.widget_meta ul li:lang(mr),
-.widget_nav_menu ul li:lang(mr),
-.widget_pages ul li:lang(mr),
-.widget_recent_comments ul li:lang(mr),
-.widget_recent_entries ul li:lang(mr),
-.widget_rss ul li:lang(mr), .widget_tag_cloud .tagcloud:lang(mr), .entry .entry-content .wp-block-button .wp-block-button__link:lang(mr), .entry .entry-content .wp-block-archives li:lang(mr),
-.entry .entry-content .wp-block-categories li:lang(mr),
-.entry .entry-content .wp-block-latest-posts li:lang(mr), .entry .entry-content .wp-block-verse:lang(mr), .entry .entry-content .has-drop-cap:lang(mr):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(mr), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(mr),
-.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(mr),
-.entry .entry-content .wp-block-cover-image h2:lang(mr),
-.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(mr),
-.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(mr),
-.entry .entry-content .wp-block-cover h2:lang(mr), .entry .entry-content .wp-block-audio figcaption:lang(mr),
-.entry .entry-content .wp-block-video figcaption:lang(mr),
-.entry .entry-content .wp-block-image figcaption:lang(mr),
-.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(mr),
-.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(mr), .entry .entry-content .wp-block-file:lang(mr), .entry .entry-content .wp-block-file .wp-block-file__button:lang(mr), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(mr), .wp-caption-text:lang(mr), .gallery-caption:lang(mr) {
-  font-family: Arial, sans-serif;
-}
-
-body:lang(ne-NP), button:lang(ne-NP),
-input:lang(ne-NP),
-select:lang(ne-NP),
-optgroup:lang(ne-NP),
-textarea:lang(ne-NP), .author-description .author-link:lang(ne-NP),
-.comment-metadata:lang(ne-NP),
-.comment-reply-link:lang(ne-NP),
-.comments-title:lang(ne-NP),
-.comment-author .fn:lang(ne-NP),
-.discussion-meta-info:lang(ne-NP),
-.entry-meta:lang(ne-NP),
-.entry-footer:lang(ne-NP),
-.main-navigation:lang(ne-NP),
-.no-comments:lang(ne-NP),
-.not-found .page-title:lang(ne-NP),
-.error-404 .page-title:lang(ne-NP),
-.post-navigation .post-title:lang(ne-NP),
-.page-links:lang(ne-NP),
-.page-description:lang(ne-NP),
-.pagination .nav-links:lang(ne-NP),
-.sticky-post:lang(ne-NP),
-.site-title:lang(ne-NP),
-.site-info:lang(ne-NP),
-#cancel-comment-reply-link:lang(ne-NP),
-h1:lang(ne-NP),
-h2:lang(ne-NP),
-h3:lang(ne-NP),
-h4:lang(ne-NP),
-h5:lang(ne-NP),
-h6:lang(ne-NP), .page-title:lang(ne-NP), blockquote cite:lang(ne-NP), table:lang(ne-NP), .button:lang(ne-NP),
-input:lang(ne-NP)[type="button"],
-input:lang(ne-NP)[type="reset"],
-input:lang(ne-NP)[type="submit"], .comment-navigation .nav-previous:lang(ne-NP),
-.comment-navigation .nav-next:lang(ne-NP), .comment-list .pingback .comment-body:lang(ne-NP),
-.comment-list .trackback .comment-body:lang(ne-NP), .comment-list .pingback .comment-body .comment-edit-link:lang(ne-NP),
-.comment-list .trackback .comment-body .comment-edit-link:lang(ne-NP), .comment-form .comment-notes:lang(ne-NP),
-.comment-form label:lang(ne-NP), .widget_archive ul li:lang(ne-NP),
-.widget_categories ul li:lang(ne-NP),
-.widget_meta ul li:lang(ne-NP),
-.widget_nav_menu ul li:lang(ne-NP),
-.widget_pages ul li:lang(ne-NP),
-.widget_recent_comments ul li:lang(ne-NP),
-.widget_recent_entries ul li:lang(ne-NP),
-.widget_rss ul li:lang(ne-NP), .widget_tag_cloud .tagcloud:lang(ne-NP), .entry .entry-content .wp-block-button .wp-block-button__link:lang(ne-NP), .entry .entry-content .wp-block-archives li:lang(ne-NP),
-.entry .entry-content .wp-block-categories li:lang(ne-NP),
-.entry .entry-content .wp-block-latest-posts li:lang(ne-NP), .entry .entry-content .wp-block-verse:lang(ne-NP), .entry .entry-content .has-drop-cap:lang(ne-NP):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(ne-NP), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(ne-NP),
-.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(ne-NP),
-.entry .entry-content .wp-block-cover-image h2:lang(ne-NP),
-.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(ne-NP),
-.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(ne-NP),
-.entry .entry-content .wp-block-cover h2:lang(ne-NP), .entry .entry-content .wp-block-audio figcaption:lang(ne-NP),
-.entry .entry-content .wp-block-video figcaption:lang(ne-NP),
-.entry .entry-content .wp-block-image figcaption:lang(ne-NP),
-.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(ne-NP),
-.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(ne-NP), .entry .entry-content .wp-block-file:lang(ne-NP), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ne-NP), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ne-NP), .wp-caption-text:lang(ne-NP), .gallery-caption:lang(ne-NP) {
+body:lang(bn-BD, hi-IN, mr, ne-NP), button:lang(bn-BD, hi-IN, mr, ne-NP),
+input:lang(bn-BD, hi-IN, mr, ne-NP),
+select:lang(bn-BD, hi-IN, mr, ne-NP),
+optgroup:lang(bn-BD, hi-IN, mr, ne-NP),
+textarea:lang(bn-BD, hi-IN, mr, ne-NP), .author-description .author-link:lang(bn-BD, hi-IN, mr, ne-NP),
+.comment-metadata:lang(bn-BD, hi-IN, mr, ne-NP),
+.comment-reply-link:lang(bn-BD, hi-IN, mr, ne-NP),
+.comments-title:lang(bn-BD, hi-IN, mr, ne-NP),
+.comment-author .fn:lang(bn-BD, hi-IN, mr, ne-NP),
+.discussion-meta-info:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry-meta:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry-footer:lang(bn-BD, hi-IN, mr, ne-NP),
+.main-navigation:lang(bn-BD, hi-IN, mr, ne-NP),
+.no-comments:lang(bn-BD, hi-IN, mr, ne-NP),
+.not-found .page-title:lang(bn-BD, hi-IN, mr, ne-NP),
+.error-404 .page-title:lang(bn-BD, hi-IN, mr, ne-NP),
+.post-navigation .post-title:lang(bn-BD, hi-IN, mr, ne-NP),
+.page-links:lang(bn-BD, hi-IN, mr, ne-NP),
+.page-description:lang(bn-BD, hi-IN, mr, ne-NP),
+.pagination .nav-links:lang(bn-BD, hi-IN, mr, ne-NP),
+.sticky-post:lang(bn-BD, hi-IN, mr, ne-NP),
+.site-title:lang(bn-BD, hi-IN, mr, ne-NP),
+.site-info:lang(bn-BD, hi-IN, mr, ne-NP),
+#cancel-comment-reply-link:lang(bn-BD, hi-IN, mr, ne-NP),
+h1:lang(bn-BD, hi-IN, mr, ne-NP),
+h2:lang(bn-BD, hi-IN, mr, ne-NP),
+h3:lang(bn-BD, hi-IN, mr, ne-NP),
+h4:lang(bn-BD, hi-IN, mr, ne-NP),
+h5:lang(bn-BD, hi-IN, mr, ne-NP),
+h6:lang(bn-BD, hi-IN, mr, ne-NP), .page-title:lang(bn-BD, hi-IN, mr, ne-NP), blockquote cite:lang(bn-BD, hi-IN, mr, ne-NP), table:lang(bn-BD, hi-IN, mr, ne-NP), .button:lang(bn-BD, hi-IN, mr, ne-NP),
+input:lang(bn-BD, hi-IN, mr, ne-NP)[type="button"],
+input:lang(bn-BD, hi-IN, mr, ne-NP)[type="reset"],
+input:lang(bn-BD, hi-IN, mr, ne-NP)[type="submit"], .comment-navigation .nav-previous:lang(bn-BD, hi-IN, mr, ne-NP),
+.comment-navigation .nav-next:lang(bn-BD, hi-IN, mr, ne-NP), .comment-list .pingback .comment-body:lang(bn-BD, hi-IN, mr, ne-NP),
+.comment-list .trackback .comment-body:lang(bn-BD, hi-IN, mr, ne-NP), .comment-list .pingback .comment-body .comment-edit-link:lang(bn-BD, hi-IN, mr, ne-NP),
+.comment-list .trackback .comment-body .comment-edit-link:lang(bn-BD, hi-IN, mr, ne-NP), .comment-form .comment-notes:lang(bn-BD, hi-IN, mr, ne-NP),
+.comment-form label:lang(bn-BD, hi-IN, mr, ne-NP), .widget_archive ul li:lang(bn-BD, hi-IN, mr, ne-NP),
+.widget_categories ul li:lang(bn-BD, hi-IN, mr, ne-NP),
+.widget_meta ul li:lang(bn-BD, hi-IN, mr, ne-NP),
+.widget_nav_menu ul li:lang(bn-BD, hi-IN, mr, ne-NP),
+.widget_pages ul li:lang(bn-BD, hi-IN, mr, ne-NP),
+.widget_recent_comments ul li:lang(bn-BD, hi-IN, mr, ne-NP),
+.widget_recent_entries ul li:lang(bn-BD, hi-IN, mr, ne-NP),
+.widget_rss ul li:lang(bn-BD, hi-IN, mr, ne-NP), .widget_tag_cloud .tagcloud:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-button .wp-block-button__link:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-archives li:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-categories li:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-latest-posts li:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-verse:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .has-drop-cap:lang(bn-BD, hi-IN, mr, ne-NP):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-cover-image h2:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-cover .wp-block-cover-text:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-cover h2:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-audio figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-video figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-image figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(bn-BD, hi-IN, mr, ne-NP),
+.entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-file:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-file .wp-block-file__button:lang(bn-BD, hi-IN, mr, ne-NP), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(bn-BD, hi-IN, mr, ne-NP), .wp-caption-text:lang(bn-BD, hi-IN, mr, ne-NP), .gallery-caption:lang(bn-BD, hi-IN, mr, ne-NP) {
   font-family: Arial, sans-serif;
 }
 
@@ -2527,7 +2353,7 @@ hr {
 
 ul,
 ol {
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 ul {
@@ -2548,7 +2374,7 @@ li {
 
 li > ul,
 li > ol {
-  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 dt {
@@ -2570,9 +2396,9 @@ figure {
 }
 
 blockquote {
-  border-left: 2px solid #0073aa;
-  margin-left: 0;
-  padding: 0 0 0 1rem;
+  border-right: 2px solid #0073aa;
+  margin-right: 0;
+  padding: 0 1rem 0 0;
 }
 
 blockquote > p {
@@ -2811,11 +2637,11 @@ body.page .main-navigation {
 .main-navigation .main-menu > li > a {
   font-weight: 700;
   color: #0073aa;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .main-navigation .main-menu > li > a + svg {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .main-navigation .main-menu > li > a:hover,
@@ -2835,7 +2661,7 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li.menu-item-has-children > a {
-  margin-right: 0.125rem;
+  margin-left: 0.125rem;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children > a:after,
@@ -2846,7 +2672,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li.menu-item-has-children .submenu-expand {
   display: inline-block;
-  margin-right: 0.25rem;
+  margin-left: 0.25rem;
   /* Priority+ Menu */
 }
 
@@ -2856,7 +2682,7 @@ body.page .main-navigation {
   line-height: 1.2;
   width: 24px;
   padding: 0;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children .submenu-expand.main-menu-more-toggle svg {
@@ -2877,17 +2703,17 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li:last-child > a,
 .main-navigation .main-menu > li:last-child.menu-item-has-children .submenu-expand {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .main-navigation .sub-menu {
   background-color: #0073aa;
   color: #fff;
   list-style: none;
-  padding-left: 0;
+  padding-right: 0;
   position: absolute;
   opacity: 0;
-  left: -9999px;
+  right: -9999px;
   z-index: 99999;
 }
 
@@ -2910,7 +2736,7 @@ body.page .main-navigation {
   display: inline-block;
   position: absolute;
   width: calc( 24px + 1rem);
-  right: 0;
+  left: 0;
   top: calc( .125 * 1rem);
   bottom: 0;
   color: white;
@@ -2923,7 +2749,7 @@ body.page .main-navigation {
 }
 
 .main-navigation .sub-menu > li.menu-item-has-children .submenu-expand {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2938,7 +2764,7 @@ body.page .main-navigation {
   display: block;
   line-height: 1.2;
   text-shadow: none;
-  padding: calc( .5 * 1rem) calc( 24px + 1rem) calc( .5 * 1rem) 1rem;
+  padding: calc( .5 * 1rem) 1rem calc( .5 * 1rem) calc( 24px + 1rem);
   white-space: nowrap;
 }
 
@@ -2958,7 +2784,7 @@ body.page .main-navigation {
   width: 100%;
   font-size: 22px;
   font-weight: normal;
-  text-align: left;
+  text-align: right;
 }
 
 .main-navigation .sub-menu > li > a:empty {
@@ -2974,12 +2800,12 @@ body.page .main-navigation {
 .main-navigation .sub-menu > li.mobile-parent-nav-menu-item svg {
   position: relative;
   top: 0.2rem;
-  margin-right: calc( .25 * 1rem);
+  margin-left: calc( .25 * 1rem);
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
   display: block;
-  left: 0;
+  right: 0;
   margin-top: 0;
   opacity: 1;
   width: auto;
@@ -2990,7 +2816,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
-  left: 0;
+  right: 0;
   margin-top: 0;
   opacity: 1;
   width: auto;
@@ -3005,8 +2831,8 @@ body.page .main-navigation {
     margin-top: 0;
     opacity: 1;
     position: absolute;
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
     top: auto;
     bottom: auto;
     height: auto;
@@ -3020,8 +2846,8 @@ body.page .main-navigation {
     margin-top: 0;
     opacity: 1;
     position: absolute;
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
     top: auto;
     bottom: auto;
     height: auto;
@@ -3033,14 +2859,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  left: 0;
+  right: 0;
   width: 100%;
   display: table;
   position: absolute;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
-  left: 0;
+  right: 0;
   width: 100%;
   display: table;
   position: absolute;
@@ -3048,14 +2874,14 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
     display: block;
     width: max-content;
   }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
     display: block;
     width: max-content;
   }
@@ -3074,7 +2900,7 @@ body.page .main-navigation {
   margin-top: inherit;
   position: relative;
   width: 100%;
-  left: 0;
+  right: 0;
   opacity: 1;
   /* Non-mobile position */
 }
@@ -3084,7 +2910,7 @@ body.page .main-navigation {
   margin-top: inherit;
   position: relative;
   width: 100%;
-  left: 0;
+  right: 0;
   opacity: 1;
   /* Non-mobile position */
 }
@@ -3126,7 +2952,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu {
   display: block;
-  left: 0;
+  right: 0;
   margin-top: 0;
   opacity: 1;
   width: auto;
@@ -3144,8 +2970,8 @@ body.page .main-navigation {
     margin-top: 0;
     opacity: 1;
     position: absolute;
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
     top: auto;
     bottom: auto;
     height: auto;
@@ -3159,7 +2985,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu.hidden-links,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu.hidden-links {
-  left: 0;
+  right: 0;
   width: 100%;
   display: table;
   position: absolute;
@@ -3169,8 +2995,8 @@ body.page .main-navigation {
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links,
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu.hidden-links,
   .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
     display: table;
     width: max-content;
   }
@@ -3189,7 +3015,7 @@ body.page .main-navigation {
   margin-top: inherit;
   position: relative;
   width: 100%;
-  left: 0;
+  right: 0;
   opacity: 1;
   /* Non-mobile position */
 }
@@ -3223,14 +3049,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu .menu-item-has-children.off-canvas .sub-menu .submenu-expand .svg-icon {
-  transform: rotate(270deg);
+  transform: rotate(-270deg);
 }
 
 .main-navigation .main-menu .menu-item-has-children.off-canvas .sub-menu .sub-menu {
   opacity: 0;
   position: absolute;
   z-index: 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 .main-navigation .main-menu .menu-item-has-children.off-canvas .sub-menu li:hover,
@@ -3249,11 +3075,11 @@ body.page .main-navigation {
   display: table;
   margin-top: 0;
   opacity: 1;
-  padding-left: 0;
+  padding-right: 0;
   /* Mobile position */
-  left: 0;
-  top: 0;
   right: 0;
+  top: 0;
+  left: 0;
   bottom: 0;
   position: fixed;
   z-index: 100000;
@@ -3261,7 +3087,7 @@ body.page .main-navigation {
   width: 100vw;
   height: 100vh;
   max-width: 100vw;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   animation: slide_in_right 0.3s forwards;
   /* Prevent menu from being blocked by admin bar */
 }
@@ -3313,7 +3139,7 @@ body.page .main-navigation {
 /* Social menu */
 .social-navigation {
   margin-top: calc(1rem / 2);
-  text-align: left;
+  text-align: right;
 }
 
 .social-navigation ul.social-links-menu {
@@ -3333,7 +3159,7 @@ body.page .main-navigation {
 }
 
 .social-navigation ul.social-links-menu li:nth-child(n+2) {
-  margin-left: 0.1em;
+  margin-right: 0.1em;
 }
 
 .social-navigation ul.social-links-menu li a {
@@ -3363,7 +3189,7 @@ body.page .main-navigation {
 }
 
 .social-navigation ul.social-links-menu li a svg#ui-icon-link {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 @media only screen and (min-width: 768px) {
@@ -3384,12 +3210,12 @@ body.page .main-navigation {
 
 .footer-navigation .footer-menu {
   display: inline;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-navigation .footer-menu li {
   display: inline;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -3488,7 +3314,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 1168px) {
   .post-navigation .nav-links .nav-next {
     order: 2;
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -3507,11 +3333,11 @@ body.page .main-navigation {
 }
 
 .pagination .nav-links > *.dots, .pagination .nav-links > *.prev {
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .pagination .nav-links > *.dots, .pagination .nav-links > *.next {
-  padding-right: 0;
+  padding-left: 0;
 }
 
 .pagination .nav-links a:focus {
@@ -3536,7 +3362,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .pagination .nav-links {
-    margin-left: calc(10% + 60px);
+    margin-right: calc(10% + 60px);
     padding: 0;
   }
   .pagination .nav-links .prev > *,
@@ -3583,7 +3409,7 @@ body.page .main-navigation {
 }
 
 .comment-navigation .nav-next {
-  text-align: right;
+  text-align: left;
 }
 
 /* Accessibility */
@@ -3614,7 +3440,7 @@ body.page .main-navigation {
   font-size: 0.875rem;
   font-weight: bold;
   height: auto;
-  left: 5px;
+  right: 5px;
   line-height: normal;
   padding: 15px 23px 14px;
   text-decoration: none;
@@ -3631,29 +3457,23 @@ body.page .main-navigation {
 
 /* Alignments */
 .alignleft {
-  /*rtl:ignore*/
   float: left;
-  /*rtl:ignore*/
   margin-right: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .alignleft {
-    /*rtl:ignore*/
     margin-right: calc(2 * 1rem);
   }
 }
 
 .alignright {
-  /*rtl:ignore*/
   float: right;
-  /*rtl:ignore*/
   margin-left: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .alignright {
-    /*rtl:ignore*/
     margin-left: calc(2 * 1rem);
   }
 }
@@ -3661,8 +3481,8 @@ body.page .main-navigation {
 .aligncenter {
   clear: both;
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 /* Clearings */
@@ -3753,7 +3573,7 @@ body.page .main-navigation {
   .site-logo {
     margin-bottom: 0;
     position: absolute;
-    right: calc(100% + (1.25 * 1rem));
+    left: calc(100% + (1.25 * 1rem));
     top: 4px;
     z-index: 999;
   }
@@ -3941,13 +3761,13 @@ body.page .main-navigation {
 
 .site-header.featured-image .site-featured-image .post-thumbnail img {
   height: auto;
-  left: 50%;
+  right: 50%;
   max-width: 1000%;
   min-height: 100%;
   min-width: 100vw;
   position: absolute;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(50%) translateY(-50%);
   width: auto;
   z-index: 1;
   /* When image filters are active, make it grayscale to colorize it blue. */
@@ -3956,7 +3776,7 @@ body.page .main-navigation {
 @supports (object-fit: cover) {
   .site-header.featured-image .site-featured-image .post-thumbnail img {
     height: 100%;
-    left: 0;
+    right: 0;
     object-fit: cover;
     top: 0;
     transform: none;
@@ -3971,15 +3791,15 @@ body.page .main-navigation {
 .site-header.featured-image .site-featured-image .entry-header {
   margin-top: calc( 4 * 1rem);
   margin-bottom: 0;
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
   /* Entry meta */
 }
 
 @media only screen and (min-width: 768px) {
   .site-header.featured-image .site-featured-image .entry-header {
-    margin-left: calc(10% + 60px);
     margin-right: calc(10% + 60px);
+    margin-left: calc(10% + 60px);
   }
 }
 
@@ -3992,12 +3812,12 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta > span {
-  margin-right: 1rem;
+  margin-left: 1rem;
   display: inline-block;
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta > span:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta a {
@@ -4013,7 +3833,7 @@ body.page .main-navigation {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta .discussion-avatar-list {
@@ -4026,11 +3846,11 @@ body.page .main-navigation {
     position: relative;
   }
   .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-title {
-    padding-right: calc(1 * (100vw / 12) + 1rem);
+    padding-left: calc(1 * (100vw / 12) + 1rem);
   }
   .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-meta .comment-count {
     position: absolute;
-    right: 0;
+    left: 0;
   }
   .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-meta .discussion-avatar-list {
     display: block;
@@ -4064,7 +3884,7 @@ body.page .main-navigation {
   display: block;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   content: "\020";
   width: 100%;
   height: 100%;
@@ -4218,13 +4038,13 @@ body.page .main-navigation {
 
 .entry .entry-meta > span,
 .entry .entry-footer > span {
-  margin-right: 1rem;
+  margin-left: 1rem;
   display: inline-block;
 }
 
 .entry .entry-meta > span:last-child,
 .entry .entry-footer > span:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .entry .entry-meta a,
@@ -4244,7 +4064,7 @@ body.page .main-navigation {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 .entry .entry-meta {
@@ -4326,7 +4146,7 @@ body.page .main-navigation {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  right: 0;
   content: "\020";
   pointer-events: none;
 }
@@ -4380,7 +4200,7 @@ body.page .main-navigation {
 .entry .entry-content .more-link:after {
   content: "\02192";
   display: inline-block;
-  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .entry .entry-content .more-link:hover {
@@ -4584,7 +4404,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .comments-area .comments-title-wrap .discussion-meta {
     flex: 0 0 calc(2 * (100vw / 12));
-    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -4602,14 +4422,14 @@ body.page .main-navigation {
 }
 
 #respond .comment .comment-form {
-  padding-left: 0;
+  padding-right: 0;
 }
 
 #respond > small {
   display: block;
   font-size: 22px;
   position: absolute;
-  left: calc(1rem + 100%);
+  right: calc(1rem + 100%);
   top: calc(-3.5 * 1rem);
   width: calc(100vw / 12);
 }
@@ -4644,7 +4464,7 @@ body.page .main-navigation {
 
 .comment-list .children {
   margin: 0;
-  padding: 0 0 0 1rem;
+  padding: 0 1rem 0 0;
 }
 
 .comment-list > .comment:first-child {
@@ -4666,7 +4486,7 @@ body.page .main-navigation {
   font-weight: bold;
   font-size: 19.55556px;
   line-height: 1.5;
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   display: block;
 }
 
@@ -4692,14 +4512,14 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .comment {
-    padding-left: calc(.5 * (1rem + calc(100vw / 12 )));
+    padding-right: calc(.5 * (1rem + calc(100vw / 12 )));
   }
   .comment.depth-1,
   .comment .children {
-    padding-left: 0;
+    padding-right: 0;
   }
   .comment.depth-1 {
-    margin-left: calc(3.25 * 1rem);
+    margin-right: calc(3.25 * 1rem);
   }
 }
 
@@ -4712,18 +4532,18 @@ body.page .main-navigation {
 }
 
 .comment .comment-author .avatar {
-  float: left;
-  margin-right: 1rem;
+  float: right;
+  margin-left: 1rem;
   position: relative;
 }
 
 @media only screen and (min-width: 768px) {
   .comment .comment-author .avatar {
     float: inherit;
-    margin-right: inherit;
+    margin-left: inherit;
     position: absolute;
     top: 0;
-    right: calc(100% + 1rem);
+    left: calc(100% + 1rem);
   }
 }
 
@@ -4746,14 +4566,14 @@ body.page .main-navigation {
   height: 18px;
   position: absolute;
   background: #008fd3;
-  right: calc(100% - 2.5rem);
+  left: calc(100% - 2.5rem);
   top: -3px;
   width: 18px;
 }
 
 @media only screen and (min-width: 768px) {
   .comment .comment-author .post-author-badge {
-    right: calc(100% + 0.75rem);
+    left: calc(100% + 0.75rem);
   }
 }
 
@@ -4801,13 +4621,13 @@ body.page .main-navigation {
 .comment .comment-metadata .edit-link svg {
   transform: scale(0.8);
   vertical-align: baseline;
-  margin-right: 0.1em;
+  margin-left: 0.1em;
 }
 
 .comment .comment-metadata .comment-edit-link {
   position: relative;
-  padding-left: 1rem;
-  margin-left: -1rem;
+  padding-right: 1rem;
+  margin-right: -1rem;
   z-index: 1;
 }
 
@@ -4821,7 +4641,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 1168px) {
   .comment .comment-content {
-    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -4834,7 +4654,7 @@ body.page .main-navigation {
 }
 
 .comment .comment-content blockquote {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .comment .comment-content a {
@@ -4866,9 +4686,9 @@ body.page .main-navigation {
 .discussion-avatar-list li {
   position: relative;
   list-style: none;
-  margin: 0 -8px 0 0;
+  margin: 0 0 0 -8px;
   padding: 0;
-  float: left;
+  float: right;
 }
 
 .discussion-avatar-list .comment-user-avatar img {
@@ -4884,7 +4704,7 @@ body.page .main-navigation {
   vertical-align: middle;
   fill: currentColor;
   transform: scale(0.6) scaleX(-1) translateY(-0.1em);
-  margin-left: -0.25rem;
+  margin-right: -0.25rem;
 }
 
 .comment-form .comment-notes,
@@ -4898,13 +4718,13 @@ body.page .main-navigation {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email {
     width: calc(50% - 0.5rem);
-    float: left;
+    float: right;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .comment-form .comment-form-email {
-    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -5034,7 +4854,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 1168px) {
   #colophon .widget-column .widget {
-    margin-right: calc(3 * 1rem);
+    margin-left: calc(3 * 1rem);
     width: calc(50% - (3 * 1rem));
   }
 }
@@ -5054,7 +4874,7 @@ body.page .main-navigation {
 
 #colophon .site-info .imprint,
 #colophon .site-info .privacy-policy-link {
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /* Widgets */
@@ -5203,8 +5023,8 @@ body.page .main-navigation {
 
 .entry .entry-content > *.alignwide,
 .entry .entry-summary > *.alignwide {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   clear: both;
 }
 
@@ -5219,7 +5039,7 @@ body.page .main-navigation {
 .entry .entry-content > *.alignfull,
 .entry .entry-summary > *.alignfull {
   position: relative;
-  left: -1rem;
+  right: -1rem;
   width: calc( 100% + (2 * 1rem));
   max-width: calc( 100% + (2 * 1rem));
   clear: both;
@@ -5230,7 +5050,7 @@ body.page .main-navigation {
   .entry .entry-summary > *.alignfull {
     margin-top: calc(2 * 1rem);
     margin-bottom: calc(2 * 1rem);
-    left: calc( -12.5% - 75px);
+    right: calc( -12.5% - 75px);
     width: calc( 125% + 150px);
     max-width: calc( 125% + 150px);
   }
@@ -5238,12 +5058,10 @@ body.page .main-navigation {
 
 .entry .entry-content > *.alignleft,
 .entry .entry-summary > *.alignleft {
-  /*rtl:ignore*/
   float: left;
   max-width: calc(5 * (100vw / 12));
   margin-top: 0;
-  margin-left: 0;
-  /*rtl:ignore*/
+  margin-right: 0;
   margin-right: 1rem;
 }
 
@@ -5251,19 +5069,16 @@ body.page .main-navigation {
   .entry .entry-content > *.alignleft,
   .entry .entry-summary > *.alignleft {
     max-width: calc(4 * (100vw / 12));
-    /*rtl:ignore*/
     margin-right: calc(2 * 1rem);
   }
 }
 
 .entry .entry-content > *.alignright,
 .entry .entry-summary > *.alignright {
-  /*rtl:ignore*/
   float: right;
   max-width: calc(5 * (100vw / 12));
   margin-top: 0;
-  margin-right: 0;
-  /*rtl:ignore*/
+  margin-left: 0;
   margin-left: 1rem;
 }
 
@@ -5271,16 +5086,15 @@ body.page .main-navigation {
   .entry .entry-content > *.alignright,
   .entry .entry-summary > *.alignright {
     max-width: calc(4 * (100vw / 12));
-    margin-right: 0;
-    /*rtl:ignore*/
+    margin-left: 0;
     margin-left: calc(2 * 1rem);
   }
 }
 
 .entry .entry-content > *.aligncenter,
 .entry .entry-summary > *.aligncenter {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -5300,8 +5114,8 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content > *.aligncenter,
   .entry .entry-summary > *.aligncenter {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -5481,7 +5295,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-categories li ul {
   list-style: none;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .entry .entry-content .wp-block-categories ul {
@@ -5530,7 +5344,7 @@ body.page .main-navigation {
   font-size: 3.375em;
   line-height: 1;
   font-weight: bold;
-  margin: 0 0.25em 0 0;
+  margin: 0 0 0 0.25em;
 }
 
 .entry .entry-content .wp-block-pullquote {
@@ -5544,8 +5358,8 @@ body.page .main-navigation {
   border: none;
   margin-top: calc(4 * 1rem);
   margin-bottom: calc(4.33 * 1rem);
-  margin-right: 0;
-  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
 }
 
 .entry .entry-content .wp-block-pullquote p {
@@ -5587,7 +5401,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-pullquote.alignleft blockquote, .entry .entry-content .wp-block-pullquote.alignright blockquote {
   margin: 1rem 0;
   padding: 0;
-  text-align: left;
+  text-align: right;
   max-width: 100%;
 }
 
@@ -5597,14 +5411,14 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color {
   background-color: #0073aa;
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color {
-    padding-left: 10%;
     padding-right: 10%;
+    padding-left: 10%;
   }
 }
 
@@ -5632,9 +5446,9 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote {
   max-width: 100%;
   color: #fff;
-  padding-left: 0;
-  margin-left: 1rem;
+  padding-right: 0;
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-text-color p,
@@ -5644,8 +5458,8 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -5657,8 +5471,8 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignfull {
-    padding-left: calc(10% + 58px + (2 * 1rem));
     padding-right: calc(10% + 58px + (2 * 1rem));
+    padding-left: calc(10% + 58px + (2 * 1rem));
   }
 }
 
@@ -5686,7 +5500,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-quote.is-large, .entry .entry-content .wp-block-quote.is-style-large {
   margin: 1rem 0;
   padding: 0;
-  border-left: none;
+  border-right: none;
 }
 
 .entry .entry-content .wp-block-quote.is-large p, .entry .entry-content .wp-block-quote.is-style-large p {
@@ -5762,8 +5576,8 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-image.alignfull img {
     max-width: calc( 125% + 150px);
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -5846,8 +5660,8 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-cover-image.alignfull,
   .entry .entry-content .wp-block-cover.alignfull {
-    padding-left: calc(10% + 58px + (2 * 1rem));
     padding-right: calc(10% + 58px + (2 * 1rem));
+    padding-left: calc(10% + 58px + (2 * 1rem));
   }
   .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-image-text,
   .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-text,
@@ -5861,7 +5675,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-gallery {
   list-style-type: none;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .entry .entry-content .wp-block-gallery .blocks-gallery-image:last-child,
@@ -5894,7 +5708,7 @@ body.page .main-navigation {
   margin-bottom: 2rem;
   margin-top: 2rem;
   max-width: 2.25em;
-  text-align: left;
+  text-align: right;
   /* Remove duplicate rule-line when a separator
 		 * is followed by an H1, or H2 */
 }
@@ -5946,7 +5760,7 @@ body.page .main-navigation {
   color: #767676;
   font-size: 1.6875em;
   letter-spacing: 0.88889em;
-  padding-left: 0.88889em;
+  padding-right: 0.88889em;
 }
 
 .entry .entry-content .wp-block-separator + h1:before,
@@ -5982,7 +5796,7 @@ body.page .main-navigation {
   font-weight: bold;
   padding: 0.75rem 1rem;
   color: #fff;
-  margin-left: 0;
+  margin-right: 0;
   margin-top: calc(0.75 * 1rem);
 }
 
@@ -6015,8 +5829,8 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-columns.alignfull {
-  padding-left: 1rem;
   padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -6033,15 +5847,15 @@ body.page .main-navigation {
     margin-bottom: 0;
   }
   .entry .entry-content .wp-block-columns[class*='has-'] > * {
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
   .entry .entry-content .wp-block-columns[class*='has-'] > *:last-child {
-    margin-right: 0;
+    margin-left: 0;
   }
   .entry .entry-content .wp-block-columns.alignfull,
   .entry .entry-content .wp-block-columns.alignfull .wp-block-column {
-    padding-left: calc(2 * 1rem);
     padding-right: calc(2 * 1rem);
+    padding-left: calc(2 * 1rem);
   }
 }
 
@@ -6234,21 +6048,21 @@ svg {
 @media only screen and (min-width: 768px) {
   .wp-caption.aligncenter {
     position: relative;
-    left: calc( calc(8 * (100vw / 12) - 28px) / 2);
-    transform: translateX(-50%);
+    right: calc( calc(8 * (100vw / 12) - 28px) / 2);
+    transform: translateX(50%);
   }
 }
 
 @media only screen and (min-width: 1168px) {
   .wp-caption.aligncenter {
-    left: calc( calc(6 * (100vw / 12) - 28px) / 2);
+    right: calc( calc(6 * (100vw / 12) - 28px) / 2);
   }
 }
 
 .wp-caption img[class*="wp-image-"] {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .wp-caption-text {
@@ -6273,7 +6087,7 @@ svg {
 
 .gallery-item {
   display: inline-block;
-  margin-right: 16px;
+  margin-left: 16px;
   margin-bottom: 16px;
   text-align: center;
   vertical-align: top;
@@ -6285,7 +6099,7 @@ svg {
 }
 
 .gallery-columns-2 .gallery-item:nth-of-type(2n+2) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-3 .gallery-item {
@@ -6293,7 +6107,7 @@ svg {
 }
 
 .gallery-columns-3 .gallery-item:nth-of-type(3n+3) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-4 .gallery-item {
@@ -6301,7 +6115,7 @@ svg {
 }
 
 .gallery-columns-4 .gallery-item:nth-of-type(4n+4) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-5 .gallery-item {
@@ -6309,7 +6123,7 @@ svg {
 }
 
 .gallery-columns-5 .gallery-item:nth-of-type(5n+5) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-6 .gallery-item {
@@ -6317,7 +6131,7 @@ svg {
 }
 
 .gallery-columns-6 .gallery-item:nth-of-type(6n+6) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-7 .gallery-item {
@@ -6325,7 +6139,7 @@ svg {
 }
 
 .gallery-columns-7 .gallery-item:nth-of-type(7n+7) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-8 .gallery-item {
@@ -6333,7 +6147,7 @@ svg {
 }
 
 .gallery-columns-8 .gallery-item:nth-of-type(8n+8) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-9 .gallery-item {
@@ -6341,11 +6155,11 @@ svg {
 }
 
 .gallery-columns-9 .gallery-item:nth-of-type(9n+9) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-item:last-of-type {
-  padding-right: 0;
+  padding-left: 0;
 }
 
 .gallery-caption {

@@ -1,26 +1,8 @@
 // Site header
 
-.site-top-header {
-	position: relative;
-	background-color: $color__background-button;
-	z-index: 10;
-
-	&__left {}
-	&__right {
-		margin: auto 0 auto auto;
-	}
-	&__text {
-		color: #FFF;
-		font-size: $font__size-xs;
-		line-height: $font__size-xs;
-		margin: 0;
-	}
-}
-
 .site-header {
-	//padding: 1em;
+	padding: 1em;
 
-	.site-branding-container { border-bottom: 1px solid $color__background-hr; }
 	&.featured-image {
 		display: flex;
 		flex-direction: column;
@@ -34,7 +16,7 @@
 
 	@include media(tablet) {
 		margin: 0;
-		//padding: 3rem 0;
+		padding: 3rem 0;
 
 		&.featured-image {
 			min-height: 100vh;
@@ -46,68 +28,54 @@
 // Site branding
 
 .site-branding {
-	display: flex;
+
 	color: $color__text-light;
+	position: relative;
 
-	margin: 0 $size__spacing-unit;
-	@include media(tablet) { margin: 0 $size__site-margins; }
-
-	&--top-header {
-		padding: 0.6rem 0rem;
+	@include media(tablet) {
+		margin: 0 $size__site-margins;
 	}
-	&--header {
-		padding: 1.5rem 0rem;
-	}
-	.main-navigation {
-		align-self: center;
-		margin: auto 0 auto auto;
-	}
-
-	//position: relative;
 }
 
 // Site logo
 
 .site-logo {
 
-	/*position: relative;
-	z-index: 999;*/
-	//display: inline-block;
-	//margin-bottom: calc(.66 * #{$size__spacing-unit});
+	position: relative;
+	z-index: 999;
+	margin-bottom: calc(.66 * #{$size__spacing-unit});
 
-	/*@include media(tablet) {
+	@include media(tablet) {
 		margin-bottom: 0;
 		position: absolute;
 		right: calc(100% + (1.25 * #{$size__spacing-unit}));
 		top: 4px; // Accounts for box-shadow widths
 		z-index: 999;
-	}*/
+	}
 
 	.custom-logo-link {
-		/*border-radius: 100%;
+		border-radius: 100%;
 		box-sizing: content-box;
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+		display: block;
 		width: 50px;
 		height: 50px;
 		overflow: hidden;
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-		transition: box-shadow $background_transition ease-in-out;*/
-		display: block;
-		max-width: 150px;
-
-		@include media(tablet) { max-width: 100px; }
+		transition: box-shadow $background_transition ease-in-out;
 
 		.custom-logo {
 			min-height: inherit;
 		}
 
-		/*&:hover,
+		&:hover,
 		&:active,
-		&:focus { box-shadow: 0 0 0 2px rgba(0, 0, 0, 1); }*/
+		&:focus {
+			box-shadow: 0 0 0 2px rgba(0, 0, 0, 1);
+		}
 
 		@include media(tablet) {
-			/*width: 64px;
-			height: 64px;*/
-			max-width: 250px;
+			width: 64px;
+			height: 64px;
 		}
 	}
 }

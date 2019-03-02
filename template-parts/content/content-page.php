@@ -12,7 +12,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( ! twentynineteen_can_show_post_thumbnail() and ! is_front_page()) : ?>
+	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
 	<header class="entry-header">
 		<?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
 	</header>
@@ -30,11 +30,7 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-	<?php
-		if ( is_front_page()) :
-			get_template_part( 'template-parts/content/content', 'blocks' );
-		endif;
-	?>
+
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php

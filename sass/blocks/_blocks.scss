@@ -5,20 +5,11 @@
 	margin: 32px 0;
 	max-width: 100%;
 
-	&:first-child {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	/*
 	@include postContentMaxWidth();
+
 	@include media(tablet) {
 		margin: 32px 0;
-	}*/
-
-	margin-left: $size__spacing-unit;
-	margin-right: $size__spacing-unit;
-	@include media(tablet) { margin: 32px 0; }
+	}
 
 	> *:first-child {
 		margin-top: 0;
@@ -169,7 +160,7 @@
 			@include button-transition;
 			border: none;
 			font-size: $font__size-sm;
-			font-family: $font__heading;
+			@include font-family( $font__heading );
 			line-height: $font__line-height-heading;
 			box-sizing: border-box;
 			font-weight: bold;
@@ -239,7 +230,7 @@
 
 		li {
 			color: $color__text-light;
-			font-family: $font__heading;
+			@include font-family( $font__heading );
 			font-size: calc(#{$font__size_base} * #{$font__size-ratio});
 			font-weight: bold;
 			line-height: $font__line-height-heading;
@@ -308,7 +299,7 @@
 
 	//! Verse
 	.wp-block-verse {
-		font-family: $font__body;
+		@include font-family( $font__body );
 		font-size: $font__size_base;
 		line-height: 1.8;
 	}
@@ -316,7 +307,7 @@
 	//! Paragraphs
 	.has-drop-cap {
 		&:not(:focus):first-letter {
-			font-family: $font__heading;
+			@include font-family( $font__heading );
 			font-size: $font__size-xxxl;
 			line-height: 1;
 			font-weight: bold;
@@ -357,7 +348,7 @@
 
 		cite {
 			display: inline-block;
-			font-family: $font__heading;
+			@include font-family( $font__heading );
 			line-height: 1.6;
 			text-transform: none;
 			color: $color__text-light;
@@ -461,7 +452,8 @@
 
 		&:not(.is-large),
 		&:not(.is-style-large) {
-			border-left: 2px solid $color__link;
+			border-width: 2px;
+			border-color: $color__link;
 			padding-top: 0;
 			padding-bottom: 0;
 		}
@@ -521,7 +513,7 @@
 		}
 
 		.aligncenter {
-
+			
 			@include postContentMaxWidth();
 
 			@include media(tablet) {
@@ -568,7 +560,7 @@
 		.wp-block-cover-image-text,
 		.wp-block-cover-text,
 		h2 {
-			font-family: $font__heading;
+			@include font-family( $font__heading );
 			font-size: $font__size-lg;
 			font-weight: bold;
 			line-height: 1.25;
@@ -633,7 +625,7 @@
 	.wp-block-gallery .blocks-gallery-image figcaption,
 	.wp-block-gallery .blocks-gallery-item figcaption {
 		font-size: $font__size-xs;
-		font-family: $font__heading;
+		@include font-family( $font__heading );
 		line-height: $font__line-height-pre;
 		margin: 0;
 		padding: ( $size__spacing-unit * .5 );
@@ -699,25 +691,23 @@
 
 	//! File
 	.wp-block-file {
-		padding: 0 1rem;
-		font-family: $font__heading;
-		background-color: $color__background-pre;
-		border-radius: 5px;
+		@include font-family( $font__heading );
 
 		.wp-block-file__button {
-			display: inline-block;
+			display: table;
 			@include button-transition;
 			border: none;
 			border-radius: 5px;
 			background: $color__background-button;
 			font-size: $font__size-base;
-			font-family: $font__heading;
+			@include font-family( $font__heading );
 			line-height: $font__line-height-heading;
 			text-decoration: none;
 			font-weight: bold;
 			padding: ($size__spacing-unit * .75) $size__spacing-unit;
 			color: #fff;
-			margin: calc(0.75 * #{$size__spacing-unit}) 1rem;
+			margin-left: 0;
+			margin-top: calc(0.75 * #{$size__spacing-unit});
 
 			@include media(desktop) {
 				font-size: $font__size-base;
@@ -792,7 +782,7 @@
 	.wp-block-latest-comments {
 
 		.wp-block-latest-comments__comment-meta {
-			font-family: $font__heading;
+			@include font-family( $font__heading );
 			font-weight: bold;
 
 			.wp-block-latest-comments__comment-date {
