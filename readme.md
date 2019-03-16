@@ -13,6 +13,7 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 `\wp-content\themes\eurscva\sass\site\header\_site-featured-image.scss`  
 `\wp-content\themes\eurscva\sass\site\footer\_site-footer.scss`  
 `\wp-content\themes\eurscva\sass\site\primary\_posts-and-pages.scss`  
+`\wp-content\themes\eurscva\sass\site\secondary\_widgets.scss`  
 `\wp-content\themes\eurscva\sass\variables-site\_structure.scss`  
 `\wp-content\themes\eurscva\sass\variables-site\_fonts.scss`  
 `\wp-content\themes\eurscva\sass\variables-site\_colors.scss`  

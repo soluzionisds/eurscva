@@ -2626,14 +2626,12 @@ a:focus {
 
 .widget_search .search-field {
   width: 100%;
-}
-@media only screen and (min-width: 600px) {
-  .widget_search .search-field {
-    width: auto;
-  }
+  /*@include media(mobile) {
+  	width: auto;
+  }*/
 }
 .widget_search .search-submit {
-  display: block;
+  display: none;
   margin-top: 1rem;
 }
 
@@ -3400,7 +3398,8 @@ a:focus {
   }
 }
 .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks {
-  margin: 0;
+  margin: 0 auto;
+  width: 98%;
 }
 .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks a {
   text-decoration: none;
@@ -3411,6 +3410,11 @@ a:focus {
 .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks .wp-block-column:not(:last-child), .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks .wp-block-column:not(:first-child), .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks .wp-block-column:nth-child(2n) {
   margin-right: 0;
   margin-left: 0;
+}
+.entry .entry-content .wp-block-columns.wp-block-columns--over-photo {
+  position: relative;
+  top: -60px;
+  margin: 0 auto -60px auto;
 }
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
   font-family: "Roboto Condensed", sans-serif;

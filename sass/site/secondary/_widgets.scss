@@ -56,13 +56,14 @@
 	.search-field {
 		width: 100%;
 
-		@include media(mobile) {
+		/*@include media(mobile) {
 			width: auto;
-		}
+		}*/
 	}
 
 	.search-submit {
-		display: block;
+		//display: block;
+		display: none;
 		margin-top: $size__spacing-unit;
 	}
 }
