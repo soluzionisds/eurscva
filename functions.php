@@ -58,8 +58,9 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 			array(
 				'menu-1' => __( 'Primary', 'twentynineteen' ),
 				'footer' => __( 'Footer Menu', 'twentynineteen' ),
-				// [changed] disabled
+				// [changed] disabled social and added header menu
 				//'social' => __( 'Social Links Menu', 'twentynineteen' ),
+				'header' =>  __( 'Header Menu', 'twentynineteen' ),
 			)
 		);
 
@@ -188,6 +189,30 @@ add_action( 'after_setup_theme', 'twentynineteen_setup' );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function twentynineteen_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Header left', 'twentynineteen' ),
+			'id'            => 'sidebar-2',
+			'description'   => __( 'Add widgets here to appear in your left part of header.', 'twentynineteen' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => __( 'Header right', 'twentynineteen' ),
+			'id'            => 'sidebar-3',
+			'description'   => __( 'Add widgets here to appear in your right part of header.', 'twentynineteen' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
 	register_sidebar(
 		array(

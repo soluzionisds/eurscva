@@ -35,9 +35,9 @@
 	</div><!-- .entry-content -->
 	<?php
 		// [changed] added control for homepage
-		if ( is_front_page()) :
-			get_template_part( 'template-parts/content/content', 'blocks' );
-		endif;
+		//if ( is_front_page()) :
+		//	get_template_part( 'template-parts/content/content', 'blocks' );
+		//endif;
 	?>
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

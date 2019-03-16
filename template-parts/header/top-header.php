@@ -9,14 +9,31 @@
 <div class="site-top-header">
   <div class="site-branding site-branding--top-header">
     <div class="site-top-header__left">
-      <p class="site-top-header__text">
-        Telefono: 0332 806111
-      </p>
+      <?php if ( is_active_sidebar( 'sidebar-2' ) ) { ?>
+        <div class="widget-column">
+          <?php dynamic_sidebar( 'sidebar-2' ); ?>
+        </div>
+      <?php } ?>
     </div>
     <div class="site-top-header__right">
-      <p class="site-top-header__text">
-        service menu / language selection
-      </p>
+      <?php if ( has_nav_menu( 'header' ) ) { ?>
+        <nav class="header-navigation" aria-label="<?php esc_attr_e( 'Header Menu', 'twentynineteen' ); ?>">
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'header',
+              'menu_class'     => 'header-menu',
+              'depth'          => 1,
+            )
+          );
+          ?>
+        </nav>
+      <?php } ?>
+      <?php if ( is_active_sidebar( 'sidebar-3' ) ) { ?>
+        <div class="widget-column">
+          <?php dynamic_sidebar( 'sidebar-3' ); ?>
+        </div>
+      <?php } ?>
     </div>
   </div>
 </div>

@@ -5,15 +5,36 @@
 	background-color: $color__background-button;
 	z-index: 10;
 
-	&__left {}
+	// widget rewrites and styles
+	.widget-title { display: none; }
+	.widget { margin: 0; }
+	.widget.widget_polylang {
+		ul {
+			list-style-type: none;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+		a { color: #FFF; }
+		.lang-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 1.3rem;
+			height: 1.3rem;
+			border: 1px solid #FFF;
+			margin-left: 0.5rem;
+			font-size: $font__size-xs;
+			line-height: $font__size-xs;
+			text-align: center;
+		}
+	}
+
+	&__left { }
 	&__right {
 		margin: auto 0 auto auto;
-	}
-	&__text {
-		color: #FFF;
-		font-size: $font__size-xs;
-		line-height: $font__size-xs;
-		margin: 0;
+		display: flex;
+		align-items: center;
 	}
 }
 
@@ -53,7 +74,11 @@
 	@include media(tablet) { margin: 0 $size__site-margins; }
 
 	&--top-header {
-		padding: 0.6rem 0rem;
+		align-items: center;
+		padding: 0.4rem 0rem;
+		color: #FFF;
+		font-size: $font__size-xs;
+		line-height: $font__size-xs;
 	}
 	&--header {
 		padding: 1.5rem 0rem;
@@ -158,7 +183,6 @@
 // Site description
 
 .site-description {
-
 	display: inline;
 	color: $color__text-light;
 	font-weight: normal;
