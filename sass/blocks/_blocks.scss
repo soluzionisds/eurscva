@@ -786,6 +786,19 @@
 				padding-right: calc(2 * #{$size__spacing-unit});
 			}
 		}
+
+		&.wp-block-columns--section-blocks {
+			margin: 0;
+			a { text-decoration: none; }
+			.wp-block-column { margin-bottom: 0;
+				&:not(:last-child),
+				&:not(:first-child),
+				&:nth-child(2n) {
+					margin-right: 0;
+					margin-left: 0;
+				}
+			}
+		}
 	}
 
 	//! Latest Comments

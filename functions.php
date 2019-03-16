@@ -337,10 +337,10 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * [changed] disabled
- * Define Blocks for Homepage
+ * [changed]
+ * Define Blocks for Homepage, disabled
  */
-function eurscva_blocks() {
+/*function eurscva_blocks() {
   register_post_type( 'home-blocks',
     array(
       'labels' => array(
@@ -358,4 +358,4 @@ function eurscva_blocks() {
     )
   );
 }
-add_action( 'init', 'eurscva_blocks' );
+add_action( 'init', 'eurscva_blocks' );*/
