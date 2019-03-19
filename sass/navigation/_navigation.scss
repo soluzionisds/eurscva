@@ -17,6 +17,9 @@
   background-color: #FFF;
 }
 
+////////////////////////////////////////////////////////////////////
+// Main menu
+//
 #mega-menu-wrap-menu-1 .mega-menu-toggle { border-radius: 0; }
 .mega-menu-wrap {
   .mega-mobile-parent-nav-menu-item { display: none; }
@@ -24,6 +27,16 @@
     &:last-child { margin-right: 0 !important; }
   }
   .mega-toggle-label { margin: 0 0 0 6px; }
+}
+////////////////////////////////////////////////////////////////////
+// Top Header menu
+//
+#mega-menu-wrap-header {
+  #mega-menu-header {
+    margin-right: 5px;
+    li.mega-menu-item-has-children > a.mega-menu-link::after,
+    li.mega-menu-item-has-children > a.mega-menu-link span.mega-indicator::after { margin: 0 0 0 2px; }
+  }
 }
 
 //@import "menu-main-navigation";

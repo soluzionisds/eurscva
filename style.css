@@ -1011,6 +1011,14 @@ a:focus {
   margin: 0 0 0 6px;
 }
 
+#mega-menu-wrap-header #mega-menu-header {
+  margin-right: 5px;
+}
+#mega-menu-wrap-header #mega-menu-header li.mega-menu-item-has-children > a.mega-menu-link::after,
+#mega-menu-wrap-header #mega-menu-header li.mega-menu-item-has-children > a.mega-menu-link span.mega-indicator::after {
+  margin: 0 0 0 2px;
+}
+
 /** === Footer menu === */
 .footer-navigation {
   margin: auto 0 auto auto;
@@ -1336,7 +1344,7 @@ a:focus {
   width: 1.3rem;
   height: 1.3rem;
   border: 1px solid #FFF;
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
   font-size: 0.7111111111em;
   line-height: 0.7111111111em;
   text-align: center;
@@ -1381,7 +1389,7 @@ a:focus {
 }
 .site-branding--top-header {
   align-items: center;
-  padding: 0.4rem 0rem;
+  padding: 0.3rem 0rem;
   color: #FFF;
   font-size: 0.7111111111em;
   line-height: 0.7111111111em;
@@ -1800,6 +1808,9 @@ a:focus {
   .entry .entry-header {
     margin: calc(3 * 1rem) calc(8% + 30px) 1rem;
   }
+}
+.entry .entry-header .entry-title {
+  color: #005db9;
 }
 .entry .entry-title {
   margin: 0;
@@ -3399,7 +3410,11 @@ a:focus {
 }
 .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks {
   margin: 0 auto;
-  width: 98%;
+}
+@media only screen and (min-width: 1168px) {
+  .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks {
+    width: 98%;
+  }
 }
 .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks a {
   text-decoration: none;
@@ -3411,10 +3426,13 @@ a:focus {
   margin-right: 0;
   margin-left: 0;
 }
-.entry .entry-content .wp-block-columns.wp-block-columns--over-photo {
-  position: relative;
-  top: -60px;
-  margin: 0 auto -60px auto;
+@media only screen and (min-width: 1168px) {
+  .entry .entry-content .wp-block-columns.wp-block-columns--over-photo {
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    margin: 0 auto -60px auto;
+  }
 }
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
   font-family: "Roboto Condensed", sans-serif;

@@ -132,6 +132,7 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > *[class^="wp-block-"] .has-primary-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p,
+		.entry .entry-header .entry-title,
 		#colophon .widget-column .widget .widget-title {
 			color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}

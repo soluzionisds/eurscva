@@ -28,7 +28,7 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 
 ### New files:
 
-`\wp-content\themes\eurscva\sass\blocks\_home-blocks.scss`
+`\wp-content\themes\eurscva\sass\blocks\_home-blocks.scss` (disabled)  
 
 `\wp-content\themes\eurscva\template-parts\header\top-header.php`  
-`\wp-content\themes\eurscva\template-parts\content\content-blocks.php`
+`\wp-content\themes\eurscva\template-parts\content\content-blocks.php` (disabled)  

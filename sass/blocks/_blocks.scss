@@ -789,7 +789,7 @@
 
 		&.wp-block-columns--section-blocks {
 			margin: 0 auto;
-			width: 98%;
+			@include media(desktop) { width: 98%; }
 			a { text-decoration: none; }
 			.wp-block-column { margin-bottom: 0;
 				&:not(:last-child),
@@ -802,10 +802,13 @@
 		}
 
 		&.wp-block-columns--over-photo {
-			$offset: -60px;
-			position: relative;
-			top: $offset;
-			margin: 0 auto $offset auto;
+			@include media(desktop) {
+				$offset: -60px;
+				position: relative;
+				z-index: 1;
+				top: $offset;
+				margin: 0 auto $offset auto;
+			}
 		}
 
 	}

@@ -40,19 +40,18 @@
 		@include media(tablet) {
 			margin: calc(3 * #{ $size__spacing-unit}) $size__site-margins $size__spacing-unit;
 		}
+
+		.entry-title { color: $color__background-button; }
 	}
 
 	.entry-title {
-
 		@include post-section-dash;
 		margin: 0;
 
 		a {
 			color: inherit;
 
-			&:hover {
-				color: $color__text-hover;
-			}
+			&:hover { color: $color__text-hover; }
 		}
 	}
 
