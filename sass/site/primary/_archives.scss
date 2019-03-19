@@ -5,12 +5,12 @@
 	margin: $size__spacing-unit $size__spacing-unit calc(3 * #{$size__spacing-unit});
 
 	@include media(tablet) {
-		margin: 0 $size__site-margins $size__site-margins;
+		//margin: 0 $size__site-margins $size__site-margins;
+		margin: $size__spacing-unit $size__site-margins;
 	}
 
 	.page-title {
-
-		color: $color__text-light;
+		color: $color__background-button;
 		display: inline;
 		letter-spacing: normal;
 

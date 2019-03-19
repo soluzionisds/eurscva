@@ -25,15 +25,11 @@
 }
 
 .entry {
-
 	margin-top: calc(6 * #{$size__spacing-unit});
 
-	&:first-of-type {
-		margin-top: 0;
-	}
+	&:first-of-type { margin-top: 0; }
 
 	.entry-header {
-
 		margin: calc(3 * #{ $size__spacing-unit}) $size__spacing-unit $size__spacing-unit;
 		position: relative;
 
@@ -50,7 +46,6 @@
 
 		a {
 			color: inherit;
-
 			&:hover { color: $color__text-hover; }
 		}
 	}

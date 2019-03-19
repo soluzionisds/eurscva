@@ -133,6 +133,9 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p,
 		.entry .entry-header .entry-title,
+		.archive .page-header .page-title,
+		.search .page-header .page-title,
+		.error404 .page-header .page-title,
 		#colophon .widget-column .widget .widget-title {
 			color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
