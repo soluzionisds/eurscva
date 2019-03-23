@@ -84,14 +84,19 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
 
 			/* translators: used between list items, there is a space after the comma. */
 			$categories_list = get_the_category_list( __( ', ', 'twentynineteen' ) );
+			// [changed] added control to exclude default categories
+			$categories_id = get_the_category();
 			if ( $categories_list ) {
-				printf(
-					/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
-					'<span class="cat-links">%1$s<span class="screen-reader-text">%2$s</span>%3$s</span>',
-					twentynineteen_get_icon_svg( 'archive', 16 ),
-					__( 'Posted in', 'twentynineteen' ),
-					$categories_list
-				); // WPCS: XSS OK.
+				// [changed] added control to exclude default categories
+				if  ( $categories_id[0]->term_id != 1 and $categories_id[0]->term_id != 9 ) {
+					printf(
+						/* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
+						'<span class="cat-links">%1$s<span class="screen-reader-text">%2$s</span>%3$s</span>',
+						twentynineteen_get_icon_svg( 'archive', 16 ),
+						__( 'Posted in', 'twentynineteen' ),
+						$categories_list
+					); // WPCS: XSS OK.
+				}
 			}
 
 			/* translators: used between list items, there is a space after the comma. */
