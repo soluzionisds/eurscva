@@ -72,6 +72,7 @@
 
 	margin: 0 $size__spacing-unit;
 	@include media(tablet) { margin: 0 $size__site-margins; }
+	@include max-width-site;
 
 	&--top-header {
 		align-items: center;

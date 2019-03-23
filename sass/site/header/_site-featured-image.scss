@@ -114,6 +114,7 @@
 				margin-left: $size__site-margins;
 				margin-right: $size__site-margins;
 			}
+			@include max-width-site;
 
 			.entry-title {
 				margin-left: $size__spacing-unit;

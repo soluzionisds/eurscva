@@ -7,6 +7,7 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 ### Files modified:
 
 `\wp-content\themes\eurscva\sass\blocks\_blocks.scss`  
+`\wp-content\themes\eurscva\sass\mixins\_utilities.scss`  
 `\wp-content\themes\eurscva\sass\navigation\_navigation.scss`  
 `\wp-content\themes\eurscva\sass\navigation\_menu-footer-navigation.scss`  
 `\wp-content\themes\eurscva\sass\site\header\_site-header.scss`  
@@ -18,7 +19,9 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 `\wp-content\themes\eurscva\sass\variables-site\_structure.scss`  
 `\wp-content\themes\eurscva\sass\variables-site\_fonts.scss`  
 `\wp-content\themes\eurscva\sass\variables-site\_colors.scss`
-`\wp-content\themes\eurscva\sass\typography\_headings.scss`  
+`\wp-content\themes\eurscva\sass\typography\_headings.scss`
+`\wp-content\themes\eurscva\sass\mixins\_utilities.scss`  
+`\wp-content\themes\eurscva\sass\site\_site.scss`  
 
 `\wp-content\themes\eurscva\functions.php`  
 `\wp-content\themes\eurscva\header.php`  

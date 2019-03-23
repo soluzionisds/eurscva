@@ -8,6 +8,7 @@
 		//margin: 0 $size__site-margins $size__site-margins;
 		margin: $size__spacing-unit $size__site-margins;
 	}
+	@include max-width-site;
 
 	.page-title {
 		color: $color__background-button;
@@ -43,6 +44,7 @@
 	@include media(tablet) {
 		margin: calc(3 * #{$size__spacing-unit}) $size__site-margins calc(#{ $size__spacing-unit } / 2);
 	}
+	@include max-width-site;
 }
 
 /* 404 & Not found */
@@ -57,6 +59,7 @@
 		@include media(tablet) {
 			margin: calc(3 * #{$size__spacing-unit}) $size__site-margins calc(#{ $size__spacing-unit } / 2);
 		}
+		@include max-width-site;
 	}
 
 	.search-submit {
