@@ -2,6 +2,10 @@
 
 Theme developed for European school of Varese. Theme start from WordPress Twenty Nineteen v.1.2.
 
+## Vendors
+
+. Font Awesome Free 5.8.1
+
 ## FILES CHANGES from Twenty Nineteen v.1.2
 
 ### Files modified:

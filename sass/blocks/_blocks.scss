@@ -704,6 +704,31 @@
 		background-color: $color__background-pre;
 		border-radius: 5px;
 
+		&.wp-block-file--boxed {
+			@extend %fa-icon;
+		  @extend .fas;
+
+			display: inline-block;
+			text-align: center;
+			padding: 2rem;
+			width: 33.3%;
+
+		  &:before {
+				display: block;
+				font-size: 3rem;
+				color: $color__background-button;
+		    content: fa-content($fa-var-file);
+				margin-bottom: 2rem;
+		  }
+
+			a { text-decoration: none; }
+
+			.wp-block-file__button {
+				width: 100%;
+				margin: 2rem 0 0 0;
+			}
+		}
+
 		.wp-block-file__button {
 			display: inline-block;
 			@include button-transition;

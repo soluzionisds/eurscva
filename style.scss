@@ -40,8 +40,14 @@ Text Domain: eurscva
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+
 @import "sass/variables-site/variables-site";
 @import "sass/mixins/mixins-master";
+
+/* Fontawesome */
+
+@import "./vendor/fontawesome/scss/fontawesome.scss";
+@import "./vendor/fontawesome/scss/solid.scss";
 
 /* Normalize */
 
