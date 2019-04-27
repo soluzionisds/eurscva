@@ -4,7 +4,14 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 
 ## Vendors
 
-. Font Awesome Free 5.8.1
+* Font Awesome Free 5.8.1
+
+## Style classes
+
+* `wp-block-columns--section-blocks` Column Block
+* `wp-block-columns--over-photo` Column Block
+* `wp-block-list` List block
+* `wp-block-file--boxed` File Block
 
 ## FILES CHANGES from Twenty Nineteen v.1.2
 
@@ -25,7 +32,8 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 `\wp-content\themes\eurscva\sass\variables-site\_colors.scss`  
 `\wp-content\themes\eurscva\sass\typography\_headings.scss`  
 `\wp-content\themes\eurscva\sass\mixins\_utilities.scss`  
-`\wp-content\themes\eurscva\sass\site\_site.scss`  
+`\wp-content\themes\eurscva\sass\site\_site.scss`
+`\wp-content\themes\eurscva\style-editor-customizer.scss`
 
 `\wp-content\themes\eurscva\functions.php`  
 `\wp-content\themes\eurscva\header.php`  

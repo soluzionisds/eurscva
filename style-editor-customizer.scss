@@ -11,3 +11,17 @@ NOTE: This file is automatically populated with additional styles if the user se
 /** === Non-Latin font fallbacks === */
 
 @include non-latin-fonts( '.wp-block' );
+
+.wp-block-file {
+  &.wp-block-file--boxed {
+    &__button {
+      display: inline-block;
+      margin-left: .75em;
+      background: #32373c;
+      border-radius: 2em;
+      color: #fff;
+      font-size: 13px;
+      padding: .5em 1em;
+    }
+  }
+}

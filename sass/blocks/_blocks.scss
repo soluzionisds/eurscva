@@ -4,6 +4,7 @@
 .entry .entry-summary > * {
 	margin: 32px 0;
 	max-width: 100%;
+	font-size: $font__size-sm;
 
 	&:first-child {
 		margin-top: 0;
@@ -704,6 +705,7 @@
 		background-color: $color__background-pre;
 		border-radius: 5px;
 
+		//! [change] Added alternative style
 		&.wp-block-file--boxed {
 			@extend %fa-icon;
 		  @extend .fas;
@@ -711,7 +713,8 @@
 			display: inline-block;
 			text-align: center;
 			padding: 2rem;
-			width: 33.3%;
+			width: 24.6%;
+			margin: 1rem 0;
 
 		  &:before {
 				display: block;
@@ -721,11 +724,17 @@
 				margin-bottom: 2rem;
 		  }
 
-			a { text-decoration: none; }
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: $font__size-md;
+			}
 
 			.wp-block-file__button {
 				width: 100%;
 				margin: 2rem 0 0 0;
+				font-size: $font__size-sm;
 			}
 		}
 
@@ -869,6 +878,29 @@
 
 		&.has-excerpts {
 
+		}
+	}
+
+	//! Lists
+	.wp-block-list {
+		list-style-type: none;
+		padding: 0;
+ 		margin: 1rem 0;
+
+		li {
+			line-height: 1rem;
+			margin: 0 0 1.3rem 0;
+			display: flex;
+			align-items: center;
+			&:before {
+				@extend %fa-icon;
+				@extend .fas;
+				content: fa-content($fa-var-check-circle);
+				font-size: 1.4rem;
+				color: $color__background-button;
+				float: left;
+  			margin-right: 0.5em;
+			}
 		}
 	}
 

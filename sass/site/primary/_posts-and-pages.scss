@@ -34,7 +34,7 @@
 		position: relative;
 
 		@include media(tablet) {
-			margin: calc(3 * #{ $size__spacing-unit}) $size__site-margins $size__spacing-unit;
+			margin: calc(3 * #{ $size__spacing-unit}) $size__site-margins 3rem;
 		}
 		@include max-width-site;
 
