@@ -25,3 +25,7 @@ NOTE: This file is automatically populated with additional styles if the user se
     }
   }
 }
+
+.wp-block-columns.has-1-columns {
+  .editor-inner-blocks>.editor-block-list__layout>[data-type="core/column"] { flex-basis: 100%; }
+}

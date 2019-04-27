@@ -132,6 +132,7 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > *[class^="wp-block-"] .has-primary-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p,
+		.entry .entry-content > h2,
 		.entry .entry-header .entry-title,
 		.archive .page-header .page-title,
 		.search .page-header .page-title,

@@ -104,4 +104,8 @@ html[lang=vi] .wp-block * {
   padding: 0.5em 1em;
 }
 
+.wp-block-columns.has-1-columns .editor-inner-blocks > .editor-block-list__layout > [data-type="core/column"] {
+  flex-basis: 100%;
+}
+
 /*# sourceMappingURL=style-editor-customizer.css.map */

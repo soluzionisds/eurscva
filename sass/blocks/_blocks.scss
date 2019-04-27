@@ -126,6 +126,12 @@
 
 .entry .entry-content {
 
+	//! Titles
+	h2 {
+		font-size: $font__size-md;
+		color: $color__background-button;
+	}
+
 	//! Paragraphs
 	p.has-background {
 		padding: 20px 30px;
@@ -707,16 +713,18 @@
 
 		//! [change] Added alternative style
 		&.wp-block-file--boxed {
-			@extend %fa-icon;
-		  @extend .fas;
+			display: flex;
+			flex-direction: column;
 
-			display: inline-block;
 			text-align: center;
 			padding: 2rem;
-			width: 24.6%;
-			margin: 1rem 0;
+			word-break: break-all;
+			//width: 24.6%;
+			//margin: 1rem 0;
 
 		  &:before {
+				@extend %fa-icon;
+				@extend .fas;
 				display: block;
 				font-size: 3rem;
 				color: $color__background-button;
@@ -729,11 +737,13 @@
 				text-transform: uppercase;
 				font-weight: 500;
 				font-size: $font__size-md;
+				line-height: 1.3rem;
+				margin-bottom: 2rem;
 			}
 
 			.wp-block-file__button {
-				width: 100%;
-				margin: 2rem 0 0 0;
+				//width: 100%;
+				margin: auto auto 0 auto;
 				font-size: $font__size-sm;
 			}
 		}
@@ -821,6 +831,7 @@
 			}
 		}
 
+		//! custom Columns
 		&.wp-block-columns--section-blocks {
 			margin: 0 auto;
 			@include media(desktop) { width: 98%; }
@@ -834,7 +845,6 @@
 				}
 			}
 		}
-
 		&.wp-block-columns--over-photo {
 			@include media(desktop) {
 				$offset: -60px;
@@ -843,6 +853,26 @@
 				top: $offset;
 				margin: 0 auto $offset auto;
 			}
+		}
+		&.wp-block-columns--section---flex {
+			.wp-block-column {
+				flex-basis: 100%;
+				display: flex;
+				flex-wrap: wrap;
+
+				.wp-block-file.wp-block-file--boxed {
+
+					@include media(tablet) {
+						flex-basis: 32%;
+						margin: 0.1rem;
+					}
+					@include media(desktop) {
+						flex-basis: 24.6%;
+
+					}
+				}
+			}
+
 		}
 
 	}
