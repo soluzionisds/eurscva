@@ -568,6 +568,8 @@
 		min-height: 430px;
 		padding: $size__spacing-unit;
 
+		&.wp-block-cover--reduced { min-height: 350px; }
+
 		@include media(tablet) {
 			padding: $size__spacing-unit 10%;
 		}

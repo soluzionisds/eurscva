@@ -8,11 +8,12 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 
 ## Style classes
 
-* `wp-block-columns--section-blocks` Column Block - style for section blocks inside a column
-* `wp-block-columns--over-photo` Column Block - style for section blocks inside a column
-* `wp-block-columns--section---flex` Column Block - style a colum with flex property and added download file block feature
-* `wp-block-list` List block
-* `wp-block-file--boxed` File Block - style for download file block
+* `wp-block-columns--section-blocks` Columns Gutenberg Block: style for section blocks inside a column
+* `wp-block-columns--over-photo` Columns Gutenberg Block: style for section blocks inside a column
+* `wp-block-columns--section---flex` Column Gutenberg Block: style a colum with flex property and added download file block feature
+* `wp-block-list` List Gutenberg Block: provide a style for <UL> and <LI>
+* `wp-block-file--boxed` File Gutenberg Block: style for download file block
+* `wp-block-cover--reduced` File Cover Block: reduced height
 
 ## FILES CHANGES from Twenty Nineteen v.1.2
 
