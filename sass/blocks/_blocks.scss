@@ -747,6 +747,7 @@
 				//width: 100%;
 				margin: auto auto 0 auto;
 				font-size: $font__size-sm;
+				font-weight: bold;
 			}
 		}
 
@@ -870,11 +871,15 @@
 					}
 					@include media(desktop) {
 						flex-basis: 24.6%;
-
 					}
 				}
 			}
-
+		}
+		&.wp-block-columns--sidebar {
+			.wp-block-column {
+				&:first-child { flex-basis: 70%; }
+				&:last-child { flex-basis: 30%; }
+			}
 		}
 
 	}
