@@ -839,7 +839,8 @@
 			margin: 0 auto;
 			@include media(desktop) { width: 98%; }
 			a { text-decoration: none; }
-			.wp-block-column { margin-bottom: 0;
+			.wp-block-column {
+				margin-bottom: 0;
 				&:not(:last-child),
 				&:not(:first-child),
 				&:nth-child(2n) {
@@ -864,7 +865,6 @@
 				flex-wrap: wrap;
 
 				.wp-block-file.wp-block-file--boxed {
-
 					@include media(tablet) {
 						flex-basis: 32%;
 						margin: 0.1rem;
@@ -926,17 +926,34 @@
 
 		li {
 			line-height: 1rem;
+			padding: 0 0 1rem 0;
 			margin: 0 0 1.3rem 0;
 			display: flex;
 			align-items: center;
-			&:before {
-				@extend %fa-icon;
-				@extend .fas;
-				content: fa-content($fa-var-check-circle);
-				font-size: 1.4rem;
+			border-bottom: 1px solid $color__background-hr;
+		}
+		&--with-icon {
+			.fas {
+				font-size: 1.2rem;
 				color: $color__background-button;
-				float: left;
-  			margin-right: 0.5em;
+				margin-right: 0.5em;
+			}
+			li {
+				font-size: $font__size-sm;
+				padding: 0 0 0.5rem 0;
+				margin: 0 0 0.5rem 0;
+			}
+		}
+		&--with-check-icon {
+			li {
+				&:before {
+					@extend %fa-icon;
+					@extend .fas;
+					content: fa-content($fa-var-check-circle);
+					font-size: 1.4rem;
+					color: $color__background-button;
+	  			margin-right: 0.5em;
+				}
 			}
 		}
 	}

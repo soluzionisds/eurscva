@@ -13,6 +13,8 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 * `wp-block-columns--section---flex` Column Gutenberg Block: style a column with flex property and added download file block feature
 * `wp-block-columns--sidebar` Column Gutenberg Block: two columns with sidebar on right
 * `wp-block-list` List Gutenberg Block: provide a style for UL and LI
+* `wp-block-list--with-icon` List Gutenberg Block: provide a style for UL and LI with icon
+* `wp-block-list--with-check-icon` List Gutenberg Block: provide a style for UL and LI with check-circle icon
 * `wp-block-file--boxed` File Gutenberg Block: style for download file block
 * `wp-block-cover--reduced` File Cover Block: reduced height
 
