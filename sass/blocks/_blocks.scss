@@ -927,34 +927,43 @@
 		li {
 			line-height: 1rem;
 			padding: 0 0 1rem 0;
-			margin: 0 0 1.3rem 0;
-			align-items: center;
+			margin: 0 0 1rem 0;
 			border-bottom: 1px solid $color__background-hr;
+			&:last-child { border-bottom: 0; }
 		}
-		&--with-icon {
+		&--in-column {
 			.fas {
 				font-size: 1.2rem;
 				color: $color__background-button;
-				margin-right: 0.5em;
+				margin: 0 0.3em 0.3em 0;
+				vertical-align: middle;
 			}
 			li {
-				display: flex;
 				font-size: $font__size-sm;
-				padding: 0 0 0.5rem 0;
-				margin: 0 0 0.5rem 0;
+				padding: 0 0 0.3rem 0;
+				margin: 0 0 0.3rem 0;
 			}
 		}
-		&--with-check-icon {
+		&--with-icon {
 			li {
-				display: flex;
 				&:before {
+					vertical-align: middle;
 					@extend %fa-icon;
 					@extend .fas;
-					content: fa-content($fa-var-check-circle);
 					font-size: 1.4rem;
 					color: $color__background-button;
-	  			margin-right: 0.5em;
+					margin: 0 0.3em 0.3em 0;
 				}
+			}
+		}
+		&--with-icon---check {
+			li {
+				&:before { content: fa-content($fa-var-check-circle); }
+			}
+		}
+		&--with-icon---user {
+			li {
+				&:before { content: fa-content($fa-var-user); }
 			}
 		}
 	}
