@@ -9391,7 +9391,6 @@ a:focus {
   line-height: 1rem;
   padding: 0 0 1rem 0;
   margin: 0 0 1.3rem 0;
-  display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
@@ -9401,9 +9400,13 @@ a:focus {
   margin-right: 0.5em;
 }
 .entry .entry-content .wp-block-list--with-icon li {
+  display: flex;
   font-size: 0.8888888889em;
   padding: 0 0 0.5rem 0;
   margin: 0 0 0.5rem 0;
+}
+.entry .entry-content .wp-block-list--with-check-icon li {
+  display: flex;
 }
 .entry .entry-content .wp-block-list--with-check-icon li:before {
   content: "";
