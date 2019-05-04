@@ -880,9 +880,26 @@
 			}
 		}
 		&.wp-block-columns--sidebar {
+			flex-direction: column;
+			margin-bottom: 32px;
+			@include media(desktop) { flex-direction: row; }
+			.widget-title {
+				margin-top: 0;
+				font-size: $font__size-md;
+				&:before { margin-top: 0; }
+			}
+
 			.wp-block-column {
-				&:first-child { flex-basis: 70%; }
-				&:last-child { flex-basis: 30%; }
+				@include media(tablet) {
+					&:last-child { margin-left: 0;}
+				}
+				@include media(desktop) {
+					&:first-child { flex-basis: 70%; }
+					&:last-child {
+						flex-basis: 30%;
+						margin-left: 32px;
+					}
+				}
 			}
 		}
 	}
