@@ -13,7 +13,10 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 * `wp-block-columns--section---flex` Column Gutenberg Block: style a column with flex property and added download file block feature
 * `wp-block-columns--sidebar` Column Gutenberg Block: two columns with sidebar on right
 * `wp-block-list` List Gutenberg Block: provide a style for UL and LI
-* `wp-block-list--with-icon` List Gutenberg Block: provide a style for UL and LI with icon
+* `wp-block-list--in-column` List Gutenberg Block: provide a style for UL and LI in wp-block-columns
+* `wp-block-list--with-icon` List Gutenberg Block: provide a style for UL and LI
+* `wp-block-list--with-icon---check` List Gutenberg Block: provide a style for UL and LI with check icon
+* `wp-block-list--with-icon---user` List Gutenberg Block: provide a style for UL and LI with user icon
 * `wp-block-list--with-check-icon` List Gutenberg Block: provide a style for UL and LI with check-circle icon
 * `wp-block-file--boxed` File Gutenberg Block: style for download file block
 * `wp-block-cover--reduced` File Cover Block: reduced height
@@ -23,6 +26,7 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 ### Files modified:
 
 `\wp-content\themes\eurscva\sass\blocks\_blocks.scss`  
+`\wp-content\themes\eurscva\sass\elements\_elements.scss`  
 `\wp-content\themes\eurscva\sass\mixins\_utilities.scss`  
 `\wp-content\themes\eurscva\sass\navigation\_navigation.scss`  
 `\wp-content\themes\eurscva\sass\navigation\_menu-footer-navigation.scss`  
