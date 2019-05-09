@@ -6620,6 +6620,10 @@ input[type=submit]:focus {
   outline-offset: -4px;
 }
 
+input[type=submit] {
+  width: 100%;
+}
+
 input[type=text],
 input[type=email],
 input[type=url],
@@ -6671,6 +6675,18 @@ input[type=search]::-webkit-search-decoration {
   display: none;
 }
 
+input[type=text],
+input[type=email],
+select {
+  width: 100%;
+}
+
+select {
+  background: #fff;
+  border: solid 1px #ccc;
+  padding: 0.36rem 0.66rem;
+}
+
 textarea {
   box-sizing: border-box;
   display: block;
@@ -6681,6 +6697,9 @@ textarea {
 
 form p {
   margin: 1rem 0;
+}
+form .wpcf7-list-item {
+  margin: 0;
 }
 
 /* Navigation */
@@ -9263,6 +9282,19 @@ a:focus {
 .entry .entry-content .wp-block-table th,
 .entry .entry-content .wp-block-table td {
   border-color: #767676;
+}
+.entry .entry-content .wp-block-map {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 39%;
+  height: 0;
+}
+.entry .entry-content .wp-block-map iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 .entry .entry-content .wp-block-file {
   padding: 0 1rem;

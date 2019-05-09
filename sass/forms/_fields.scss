@@ -37,8 +37,14 @@ input[type="search"] {
 	}
 }
 
-select {
+input[type="text"],
+input[type="email"],
+select { width: 100%; }
 
+select {
+	background: $color__background-input;
+	border: solid 1px $color__border;
+	padding: #{.36 * $size__spacing-unit} #{.66 * $size__spacing-unit};
 }
 
 textarea {
@@ -51,8 +57,7 @@ textarea {
 
 form {
 
-	p {
-		margin: $size__spacing-unit 0;
-	}
+	p { margin: $size__spacing-unit 0; }
+	.wpcf7-list-item { margin: 0; }
 
 }

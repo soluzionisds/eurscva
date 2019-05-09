@@ -710,6 +710,22 @@
 		}
 	}
 
+	//! Google maps
+	.wp-block-map {
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 39%;
+		height: 0;
+
+		iframe {
+			position: absolute;
+			left:0;
+			top:0;
+			height:100%;
+			width:100%;
+		}
+	}
+
 	//! File
 	.wp-block-file {
 		padding: 0 1rem;
