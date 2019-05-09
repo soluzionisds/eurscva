@@ -61,6 +61,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 				// [changed] disabled social and added header menu
 				//'social' => __( 'Social Links Menu', 'twentynineteen' ),
 				'header' =>  __( 'Header Menu', 'twentynineteen' ),
+				'sites' =>  __( 'Sites Menu', 'twentynineteen' ),
 			)
 		);
 
@@ -213,7 +214,7 @@ function twentynineteen_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
-	
+
 	register_sidebar(
 		array(
 			'name'          => __( 'Sidebar', 'twentynineteen' ),
