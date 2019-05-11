@@ -17,18 +17,19 @@
 		}
 		a {
 			display: block;
-			color: #FFF;
+			padding: 0.3rem 0;
 			height: 100%;
 			width: 100%;
-			line-height: 22px;
+			line-height: 12px;
 			font-size: $font__size-xs;
+			color: #FFF;
 		}
 		.lang-item {
 			//display: flex;
 			align-items: center;
 			justify-content: center;
 			width: 1.3rem;
-			height: 1.3rem;
+			min-height: 1.3rem;
 			border: 1px solid #FFF;
 			margin-left: 0.2rem;
 			text-align: center;
@@ -37,7 +38,10 @@
 		}
 	}
 
-	&__left { }
+	&__left {
+		display: none;
+		@include media(tablet) { display: inline-block; }
+	}
 	&__right {
 		margin: auto 0 auto auto;
 		display: flex;

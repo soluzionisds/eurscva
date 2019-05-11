@@ -1,8 +1,9 @@
 /** === Footer menu === */
 
 .footer-navigation {
-	margin: auto 0 auto auto;
+	margin: 0;
 	display: inline;
+	@include media(tablet) { margin: auto 0 auto auto; }
 
 	& > div {	display: inline; }
 

@@ -27,6 +27,10 @@
 
 	<?php twentynineteen_post_thumbnail(); ?>
 
+	<div class="entry-content">
+		<?php the_excerpt(); ?>
+	</div><!-- .entry-content -->
+
 	<footer class="entry-footer">
 		<?php twentynineteen_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

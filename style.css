@@ -6720,7 +6720,7 @@ a:hover, a:active {
 }
 a:focus {
   outline: thin dotted;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -6755,7 +6755,7 @@ a:focus {
 }
 
 #mega-menu-wrap-header #mega-menu-header {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 #mega-menu-wrap-header #mega-menu-header li.mega-menu-item-has-children > a.mega-menu-link::after,
 #mega-menu-wrap-header #mega-menu-header li.mega-menu-item-has-children > a.mega-menu-link span.mega-indicator::after {
@@ -6764,16 +6764,24 @@ a:focus {
 
 .sites-menu {
   list-style-type: none;
-  display: flex;
   padding: 0;
   margin: 0;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .sites-menu {
+    display: flex;
+  }
 }
 .sites-menu .menu-item {
   border: 1px solid #CCC;
-  height: 1.3rem;
+  min-height: 1.3rem;
   margin: 0.1rem 0.2rem 0 0;
 }
-.sites-menu .menu-item--selected {
+.sites-menu .menu-item--scuola-europea:hover {
+  background-color: #005db9;
+}
+.sites-menu .menu-item--scuola-europea.menu-item--selected {
   background-color: #233e90;
 }
 .sites-menu .menu-item--ciclo-materno:hover {
@@ -6786,9 +6794,9 @@ a:focus {
   background-color: #2dbc7a;
 }
 .sites-menu .menu-item a {
-  padding: 0 0.3rem;
+  padding: 0.3rem;
   color: #FFF;
-  line-height: 22px;
+  line-height: 12px;
   font-size: 0.8888888889em;
   height: 100%;
   width: 100%;
@@ -6797,8 +6805,13 @@ a:focus {
 
 /** === Footer menu === */
 .footer-navigation {
-  margin: auto 0 auto auto;
+  margin: 0;
   display: inline;
+}
+@media only screen and (min-width: 768px) {
+  .footer-navigation {
+    margin: auto 0 auto auto;
+  }
 }
 .footer-navigation > div {
   display: inline;
@@ -7112,23 +7125,32 @@ a:focus {
 }
 .site-top-header .widget.widget_polylang a {
   display: block;
-  color: #FFF;
+  padding: 0.3rem 0;
   height: 100%;
   width: 100%;
-  line-height: 22px;
+  line-height: 12px;
   font-size: 0.7111111111em;
+  color: #FFF;
 }
 .site-top-header .widget.widget_polylang .lang-item {
   align-items: center;
   justify-content: center;
   width: 1.3rem;
-  height: 1.3rem;
+  min-height: 1.3rem;
   border: 1px solid #FFF;
   margin-left: 0.2rem;
   text-align: center;
 }
 .site-top-header .widget.widget_polylang .lang-item:hover, .site-top-header .widget.widget_polylang .lang-item.current-lang {
   background-color: #233e90;
+}
+.site-top-header__left {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .site-top-header__left {
+    display: inline-block;
+  }
 }
 .site-top-header__right {
   margin: auto 0 auto auto;
@@ -8443,6 +8465,12 @@ a:focus {
   border-top: 1px solid #BBB;
   color: #767676;
   display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  #colophon .site-info {
+    flex-direction: row;
+  }
 }
 #colophon .site-info a {
   color: inherit;
@@ -9111,6 +9139,7 @@ a:focus {
   position: relative;
   min-height: 430px;
   padding: 1rem;
+  display: none;
 }
 .entry .entry-content .wp-block-cover-image.wp-block-cover--reduced,
 .entry .entry-content .wp-block-cover.wp-block-cover--reduced {
@@ -9119,6 +9148,7 @@ a:focus {
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-cover-image,
 .entry .entry-content .wp-block-cover {
+    display: flex;
     padding: 1rem 10%;
   }
 }
