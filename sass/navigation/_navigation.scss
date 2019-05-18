@@ -52,37 +52,65 @@
   @include media(tablet) { display: flex; }
 
   .menu-item {
-    border: 1px solid #CCC;
-    min-height: 1.3rem;
     margin: 0.1rem 0.2rem 0 0;
-    //background-color: #233e90;
+    font-size: $font__size-xs;
+    a {
+      //color: $color__background-button;
+      //border-color: $color__background-button;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 4px;
+      padding: 0.3rem;
+      line-height: 12px;
+      font-size: $font__size-xs;
+      height: 100%;
+      width: 100%;
+      display: block;
 
-    &--scuola-europea {
-      //border: 1px solid #232b38;
-      &:hover { background-color: $color__background-button; }
+      @include custom-transition(0.2s);
     }
-    &--scuola-europea.menu-item--selected { background-color: #233e90; }
+    &:hover {
+      a {
+        color: #FFF;
+        border-width: 1px;
+        border-style: solid;
+      }
+    }
+
+    &.menu-item--selected a {
+      color: #FFF;
+      border-color: $color__background-button;
+      background-color: $color__background-button;
+    }
+    &--scuola-europea {
+      a:hover {
+        border-color: $color__background-button;
+        background-color: $color__background-button;
+      }
+    }
+    /*&--scuola-europea.menu-item--selected {
+      a {
+        color: #FFF;
+        background-color: $color__background-button;
+      }
+    }*/
     &--ciclo-materno {
-      //border: 1px solid #A89700;
-      &:hover { background-color: #A89700; }
+      a:hover {
+        border-color: #A89700;
+        background-color: #A89700;
+      }
     }
     &--ciclo-primario {
-      //border: 1px solid #F90;
-      &:hover { background-color: #F90; }
+      a:hover {
+        border-color: #F90;
+        background-color: #F90;
+      }
     }
     &--ciclo-secondario {
-      //border: 1px solid #2dbc7a;
-      &:hover { background-color: #2dbc7a; }
-    }
-
-    a {
-      padding: 0.3rem;
-      color: #FFF;
-      line-height: 12px;
-			font-size: $font__size-sm;
-      height: 100%;
-			width: 100%;
-      display: block;
+      a:hover {
+        border-color: #2dbc7a;
+        background-color: #2dbc7a;
+      }
     }
   }
 }

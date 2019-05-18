@@ -16,24 +16,6 @@
       <?php } ?>
     </div>
     <div class="site-top-header__right">
-      <?php if ( has_nav_menu( 'sites' ) ) { ?>
-        <nav class="sites-navigation" aria-label="<?php esc_attr_e( 'Sites Menu', 'twentynineteen' ); ?>">
-          <?php
-          wp_nav_menu(
-            array(
-              'theme_location' => 'sites',
-              'menu_class'     => 'sites-menu',
-              'depth'          => 1,
-            )
-          );
-          ?>
-        </nav>
-      <?php } ?>
-      <?php if ( is_active_sidebar( 'sidebar-3' ) ) { ?>
-        <div class="widget-column">
-          <?php dynamic_sidebar( 'sidebar-3' ); ?>
-        </div>
-      <?php } ?>
       <?php if ( has_nav_menu( 'header' ) ) { ?>
         <nav class="header-navigation" aria-label="<?php esc_attr_e( 'Header Menu', 'twentynineteen' ); ?>">
           <?php
@@ -46,6 +28,11 @@
           );
           ?>
         </nav>
+      <?php } ?>
+      <?php if ( is_active_sidebar( 'sidebar-3' ) ) { ?>
+        <div class="widget-column">
+          <?php dynamic_sidebar( 'sidebar-3' ); ?>
+        </div>
       <?php } ?>
     </div>
   </div>

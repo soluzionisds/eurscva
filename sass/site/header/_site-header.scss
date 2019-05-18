@@ -95,39 +95,26 @@
 	&--header {
 		padding: 1.5rem 0rem;
 	}
-	.main-navigation {
-		align-self: center;
-		margin: auto 0 auto auto;
-	}
 
 	//position: relative;
+
+	&__left {}
+	&__right {
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		margin: auto 0 auto auto;
+		.sites-navigation {
+			align-self: flex-end;
+			margin-bottom: 0.5rem;
+		}
+	}
 }
 
 // Site logo
-
 .site-logo {
 
-	/*position: relative;
-	z-index: 999;*/
-	//display: inline-block;
-	//margin-bottom: calc(.66 * #{$size__spacing-unit});
-
-	/*@include media(tablet) {
-		margin-bottom: 0;
-		position: absolute;
-		right: calc(100% + (1.25 * #{$size__spacing-unit}));
-		top: 4px; // Accounts for box-shadow widths
-		z-index: 999;
-	}*/
-
 	.custom-logo-link {
-		/*border-radius: 100%;
-		box-sizing: content-box;
-		width: 50px;
-		height: 50px;
-		overflow: hidden;
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-		transition: box-shadow $background_transition ease-in-out;*/
 		display: block;
 		max-width: 150px;
 

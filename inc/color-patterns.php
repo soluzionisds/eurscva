@@ -96,7 +96,8 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color.has-primary-background-color,
 		.entry .entry-content .wp-block-file .wp-block-file__button,
-		.site-top-header {
+		.site-top-header,
+		.sites-menu .menu-item.menu-item--selected a {
 			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
@@ -138,6 +139,7 @@ function twentynineteen_custom_colors_css() {
 		.archive .page-header .page-title,
 		.search .page-header .page-title,
 		.error404 .page-header .page-title,
+		.sites-menu .menu-item a,
 		#colophon .widget-column .widget .widget-title {
 			color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
@@ -172,7 +174,8 @@ function twentynineteen_custom_colors_css() {
 		input[type="datetime"]:focus,
 		input[type="datetime-local"]:focus,
 		input[type="color"]:focus,
-		textarea:focus {
+		textarea:focus,
+		.sites-menu .menu-item.menu-item--selected a {
 			border-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
@@ -268,8 +271,7 @@ function twentynineteen_custom_colors_css() {
 		.editor-block-list__layout .editor-block-list__block .wp-block-pullquote.is-style-solid-color a,
 		.editor-block-list__layout .editor-block-list__block .wp-block-cover a {
 			color: inherit;
-		}
-		';
+		}';
 
 	if ( function_exists( 'register_block_type' ) && is_admin() ) {
 		$theme_css = $editor_css;

@@ -6774,33 +6774,55 @@ a:focus {
   }
 }
 .sites-menu .menu-item {
-  border: 1px solid #CCC;
-  min-height: 1.3rem;
   margin: 0.1rem 0.2rem 0 0;
-}
-.sites-menu .menu-item--scuola-europea:hover {
-  background-color: #005db9;
-}
-.sites-menu .menu-item--scuola-europea.menu-item--selected {
-  background-color: #233e90;
-}
-.sites-menu .menu-item--ciclo-materno:hover {
-  background-color: #A89700;
-}
-.sites-menu .menu-item--ciclo-primario:hover {
-  background-color: #F90;
-}
-.sites-menu .menu-item--ciclo-secondario:hover {
-  background-color: #2dbc7a;
+  font-size: 0.7111111111em;
+  /*&--scuola-europea.menu-item--selected {
+    a {
+      color: #FFF;
+      background-color: $color__background-button;
+    }
+  }*/
 }
 .sites-menu .menu-item a {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
   padding: 0.3rem;
-  color: #FFF;
   line-height: 12px;
-  font-size: 0.8888888889em;
+  font-size: 0.7111111111em;
   height: 100%;
   width: 100%;
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sites-menu .menu-item:hover a {
+  color: #FFF;
+  border-width: 1px;
+  border-style: solid;
+}
+.sites-menu .menu-item.menu-item--selected a {
+  color: #FFF;
+  border-color: #005db9;
+  background-color: #005db9;
+}
+.sites-menu .menu-item--scuola-europea a:hover {
+  border-color: #005db9;
+  background-color: #005db9;
+}
+.sites-menu .menu-item--ciclo-materno a:hover {
+  border-color: #A89700;
+  background-color: #A89700;
+}
+.sites-menu .menu-item--ciclo-primario a:hover {
+  border-color: #F90;
+  background-color: #F90;
+}
+.sites-menu .menu-item--ciclo-secondario a:hover {
+  border-color: #2dbc7a;
+  background-color: #2dbc7a;
 }
 
 /** === Footer menu === */
@@ -7207,30 +7229,18 @@ a:focus {
 .site-branding--header {
   padding: 1.5rem 0rem;
 }
-.site-branding .main-navigation {
+.site-branding__right {
+  display: flex;
+  flex-direction: column;
   align-self: center;
   margin: auto 0 auto auto;
 }
-
-.site-logo {
-  /*position: relative;
-  z-index: 999;*/
-  /*@include media(tablet) {
-  	margin-bottom: 0;
-  	position: absolute;
-  	right: calc(100% + (1.25 * 1rem));
-  	top: 4px; // Accounts for box-shadow widths
-  	z-index: 999;
-  }*/
+.site-branding__right .sites-navigation {
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
 }
+
 .site-logo .custom-logo-link {
-  /*border-radius: 100%;
-  box-sizing: content-box;
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  transition: box-shadow $background_transition ease-in-out;*/
   display: block;
   max-width: 150px;
   /*&:hover,
