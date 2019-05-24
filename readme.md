@@ -10,7 +10,6 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 
 * `wp-block-columns--section-blocks` Columns Gutenberg Block: style for section blocks inside a column
 * `wp-block-columns--over-photo` Columns Gutenberg Block: style for section blocks inside a column
-* `wp-block-columns--section---flex` Column Gutenberg Block: style a column with flex property and added download file block feature
 * `wp-block-columns--sidebar` Column Gutenberg Block: two columns with sidebar on right
 * `wp-block-list` List Gutenberg Block: provide a style for UL and LI
 * `wp-block-list--in-column` List Gutenberg Block: provide a style for UL and LI in wp-block-columns

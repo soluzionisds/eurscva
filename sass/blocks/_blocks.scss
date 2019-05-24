@@ -728,43 +728,57 @@
 		padding: 0 1rem;
 		font-family: $font__heading;
 		background-color: $color__background-pre;
-		border-radius: 5px;
+		//border-radius: 5px;
 
 		//! [change] Added alternative style
 		&.wp-block-file--boxed {
-			display: flex;
-			flex-direction: column;
-
 			text-align: center;
-			padding: 2rem;
+			padding: 1rem;
 			word-break: break-all;
-			//width: 24.6%;
-			//margin: 1rem 0;
+			margin-top: 0.3rem;
+			margin-bottom: 0.3rem;
+			background-color: $color__background-button;
+			//width: auto;
+
+			@include media(tablet) {
+				float: left;
+				margin: 0 0.5% 0.8rem 0.5%;
+				width: 32.33%;
+				min-height: 13rem;
+			}
+			@include media(desktop) {
+				width: 24%;
+			}
 
 		  &:before {
 				@extend %fa-icon;
 				@extend .fas;
+				content: fa-content($fa-var-file);
 				display: block;
-				font-size: 3rem;
-				color: $color__background-button;
-		    content: fa-content($fa-var-file);
-				margin-bottom: 2rem;
+				font-size: 1.8rem;
+				color: #FFF;
+				margin-bottom: 1rem;
 		  }
 
 			a {
+				display: block;
 				text-decoration: none;
 				text-transform: uppercase;
 				font-weight: 500;
-				font-size: $font__size-md;
-				line-height: 1.3rem;
-				margin-bottom: 2rem;
+				font-size: $font__size-sm;
+				line-height: 1rem;
+				//margin-bottom: 2rem;
+				color: #FFF;
 			}
 
 			.wp-block-file__button {
-				//width: 100%;
-				margin: auto auto 0 auto;
-				font-size: $font__size-sm;
+				font-size: $font__size-xs;
+				line-height: $font__size-sm;
 				font-weight: bold;
+				border:1px solid #FFF;
+				color: #FFF;
+				padding: .8rem;
+				background-color: transparent;
 			}
 		}
 
@@ -773,6 +787,7 @@
 			@include button-transition;
 			border: none;
 			border-radius: 5px;
+			color: #FFF;
 			background: $color__background-button;
 			font-size: $font__size-base;
 			font-family: $font__heading;
@@ -780,7 +795,6 @@
 			text-decoration: none;
 			font-weight: bold;
 			padding: ($size__spacing-unit * .75) $size__spacing-unit;
-			color: #fff;
 			margin: calc(0.75 * #{$size__spacing-unit}) 1rem;
 
 			@include media(desktop) {
@@ -875,7 +889,7 @@
 				margin: 0 auto $offset auto;
 			}
 		}
-		&.wp-block-columns--section---flex {
+		/*&.wp-block-columns--section---flex {
 			.wp-block-column {
 				flex-basis: 100%;
 				display: flex;
@@ -891,7 +905,7 @@
 					}
 				}
 			}
-		}
+		}*/
 		&.wp-block-columns--sidebar {
 			flex-direction: column;
 			margin-bottom: 32px;
@@ -917,7 +931,7 @@
 		}
 	}
 
-	.entry-sidebar.entry-sidebar--left {
+	/*.entry-sidebar.entry-sidebar--left {
 		.wp-block-columns.wp-block-columns--section---flex {
 			.wp-block-file.wp-block-file--boxed {
 				@include media(tablet) {
@@ -926,7 +940,7 @@
 				}
 			}
 		}
-	}
+	}*/
 
 	//! Latest Comments
 	.wp-block-latest-comments {
@@ -951,7 +965,6 @@
 		}
 
 		&.has-dates {
-
 			.wp-block-latest-comments__comment-date {
 				font-size: $font__size-xs;
 			}
@@ -994,7 +1007,7 @@
 					vertical-align: middle;
 					@extend %fa-icon;
 					@extend .fas;
-					font-size: 1.4rem;
+					font-size: 1rem;
 					color: $color__background-button;
 					margin: 0 0.3em 0.3em 0;
 				}
