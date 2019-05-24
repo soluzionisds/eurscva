@@ -127,14 +127,9 @@
 .entry .entry-content {
 
 	//! Titles
-	h2 {
-		font-size: $font__size-lg;
-		color: $color__background-button;
-	}
-	h3 {
-		font-size: $font__size-md;
-		color: $color__background-button;
-	}
+	h2, h3 { color: $color__background-button; }
+	h2 { font-size: $font__size-lg;}
+	h3 { font-size: $font__size-md; }
 
 	//! Paragraphs
 	p.has-background {

@@ -53,7 +53,7 @@
 
   .menu-item {
     margin: 0.1rem 0.2rem 0 0;
-    font-size: $font__size-xs;
+    font-size: $font__size-sm;
     a {
       //color: $color__background-button;
       //border-color: $color__background-button;
@@ -88,28 +88,22 @@
         background-color: $color__background-button;
       }
     }
-    /*&--scuola-europea.menu-item--selected {
-      a {
-        color: #FFF;
-        background-color: $color__background-button;
-      }
-    }*/
     &--ciclo-materno {
       a:hover {
-        border-color: #A89700;
-        background-color: #A89700;
+        border-color: $color_nursery;
+        background-color: $color_nursery;
       }
     }
     &--ciclo-primario {
       a:hover {
-        border-color: #F90;
-        background-color: #F90;
+        border-color: $color_primary;
+        background-color: $color_primary;
       }
     }
     &--ciclo-secondario {
       a:hover {
-        border-color: #2dbc7a;
-        background-color: #2dbc7a;
+        border-color: $color_secondary;
+        background-color: $color_secondary;
       }
     }
   }

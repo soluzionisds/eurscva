@@ -6775,13 +6775,7 @@ a:focus {
 }
 .sites-menu .menu-item {
   margin: 0.1rem 0.2rem 0 0;
-  font-size: 0.7111111111em;
-  /*&--scuola-europea.menu-item--selected {
-    a {
-      color: #FFF;
-      background-color: $color__background-button;
-    }
-  }*/
+  font-size: 0.8888888889em;
 }
 .sites-menu .menu-item a {
   border-width: 1px;
@@ -6813,16 +6807,16 @@ a:focus {
   background-color: #005db9;
 }
 .sites-menu .menu-item--ciclo-materno a:hover {
-  border-color: #A89700;
-  background-color: #A89700;
+  border-color: #a80065;
+  background-color: #a80065;
 }
 .sites-menu .menu-item--ciclo-primario a:hover {
-  border-color: #F90;
-  background-color: #F90;
+  border-color: #00a8a0;
+  background-color: #00a8a0;
 }
 .sites-menu .menu-item--ciclo-secondario a:hover {
-  border-color: #2dbc7a;
-  background-color: #2dbc7a;
+  border-color: #00a81c;
+  background-color: #00a81c;
 }
 
 /** === Footer menu === */
@@ -7597,6 +7591,10 @@ a:focus {
 --------------------------------------------------------------*/
 .sticky {
   display: block;
+}
+
+.fas, .entry .entry-content .wp-block-list--with-icon li:before, .entry .entry-content .wp-block-file.wp-block-file--boxed:before {
+  color: #005db9;
 }
 
 .sticky-post {
@@ -8783,13 +8781,14 @@ a:focus {
   }
 }
 
+.entry .entry-content h2, .entry .entry-content h3 {
+  color: #005db9;
+}
 .entry .entry-content h2 {
   font-size: 1.6875em;
-  color: #005db9;
 }
 .entry .entry-content h3 {
   font-size: 1.125em;
-  color: #005db9;
 }
 .entry .entry-content p.has-background {
   padding: 20px 30px;

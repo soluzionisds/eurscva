@@ -9,6 +9,9 @@ $color__background-button-hover: #111;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__background_selection: mix( $color__background-body, $color__background-button, 75% ); // lighten( salmon, 22.5% ); // lighten( #0999d4, 48% );
+$color_nursery: hsl( 324, 100%, 33% );
+$color_primary: hsl( 177, 100%, 33% );
+$color_secondary: hsl( 130, 100%, 33% );
 
 // Text
 $color__text-main: #111;
