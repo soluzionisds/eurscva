@@ -100,10 +100,9 @@
 				}
 			}
 		}
+		.site-header--sticky + .site-content { padding-top: 180px; }
 	}
 }
-
-.site-header--sticky + .site-content { padding-top: 180px; }
 
 // Site branding
 
@@ -123,7 +122,8 @@
 		line-height: $font__size-xs;
 	}
 	&--header {
-		padding: 1.5rem 0rem;
+		padding: 1rem 0rem;
+		@include media(tablet) { padding: 1.5rem 0rem; }
 	}
 
 	//position: relative;
@@ -146,13 +146,11 @@
 
 	.custom-logo-link {
 		display: block;
-		max-width: 150px;
+		max-width: 190px;
 
 		@include media(tablet) { max-width: 100px; }
 
-		.custom-logo {
-			min-height: inherit;
-		}
+		.custom-logo { min-height: inherit; }
 
 		/*&:hover,
 		&:active,
@@ -167,7 +165,6 @@
 }
 
 // Site title
-
 .site-title {
 	margin: auto;
 	display: inline;

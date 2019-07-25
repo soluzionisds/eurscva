@@ -7253,10 +7253,9 @@ a:focus {
     transition: all 0.3s ease-in-out;
     max-width: 190px;
   }
-}
-
-.site-header--sticky + .site-content {
-  padding-top: 180px;
+  .site-header .site-header--sticky + .site-content {
+    padding-top: 180px;
+  }
 }
 
 .site-branding {
@@ -7284,7 +7283,12 @@ a:focus {
   line-height: 0.7111111111em;
 }
 .site-branding--header {
-  padding: 1.5rem 0rem;
+  padding: 1rem 0rem;
+}
+@media only screen and (min-width: 768px) {
+  .site-branding--header {
+    padding: 1.5rem 0rem;
+  }
 }
 .site-branding__right {
   display: flex;
@@ -7299,7 +7303,7 @@ a:focus {
 
 .site-logo .custom-logo-link {
   display: block;
-  max-width: 150px;
+  max-width: 190px;
   /*&:hover,
   &:active,
   &:focus { box-shadow: 0 0 0 2px rgba(0, 0, 0, 1); }*/

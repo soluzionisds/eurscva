@@ -9,7 +9,7 @@
     });
 
     // lightbox for PDF
-    if ($('.wp-block-file.wp-block-file--boxed').length > 0) {
-        $('.wp-block-file.wp-block-file--boxed').find('a').addClass('fancybox-pdf');
+    if ($('.wp-block-file').length > 0) {
+        $('.wp-block-file').find('a').addClass('fancybox-pdf');
     }
 })( jQuery );
