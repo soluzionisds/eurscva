@@ -7253,11 +7253,13 @@ a:focus {
     transition: all 0.3s ease-in-out;
     max-width: 190px;
   }
-  .site-header .site-header--sticky + .site-content {
+}
+
+@media only screen and (min-width: 1168px) {
+  .site-header--sticky + .site-content {
     padding-top: 180px;
   }
 }
-
 .site-branding {
   display: flex;
   color: #767676;

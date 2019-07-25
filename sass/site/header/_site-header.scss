@@ -100,8 +100,10 @@
 				}
 			}
 		}
-		.site-header--sticky + .site-content { padding-top: 180px; }
 	}
+}
+@include media(desktop) {
+	.site-header--sticky + .site-content { padding-top: 180px; }
 }
 
 // Site branding
