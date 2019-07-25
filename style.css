@@ -6726,16 +6726,6 @@ a:focus {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.site-branding.site-sticky {
-  position: fixed;
-  margin: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  background-color: #FFF;
-}
-
 #mega-menu-wrap-menu-1 .mega-menu-toggle {
   border-radius: 0;
 }
@@ -7232,6 +7222,41 @@ a:focus {
     min-height: 100vh;
     margin-bottom: 3rem;
   }
+}
+@media only screen and (min-width: 1168px) {
+  .site-header--sticky {
+    position: fixed;
+    margin: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .site-header--sticky .site-top-header .site-branding.site-branding--top-header {
+    padding: 0.2rem 0rem;
+  }
+  .site-header--sticky .site-top-header__left, .site-header--sticky .site-top-header__right {
+    display: none;
+  }
+  .site-header--sticky .site-branding.site-branding--header {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 0rem;
+  }
+  .site-header--sticky .site-logo .custom-logo-link {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    max-width: 190px;
+  }
+}
+
+.site-header--sticky + .site-content {
+  padding-top: 180px;
 }
 
 .site-branding {

@@ -73,7 +73,37 @@
 			margin-bottom: 3rem;
 		}
 	}
+
+	// Sticky menu style
+	@include media(desktop) {
+		&--sticky {
+			position: fixed;
+		  margin: 0;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  z-index: 10;
+		  background-color: $color__background-body;
+			.site-top-header {
+				.site-branding.site-branding--top-header { padding: 0.2rem 0rem; }
+				&__left,
+				&__right { display: none;	}
+			}
+			.site-branding.site-branding--header {
+				@include custom-transition(0.3s);
+				padding: 0.5rem 0rem;
+			}
+			.site-logo {
+				.custom-logo-link {
+					@include custom-transition(0.3s);
+					max-width: 190px;
+				}
+			}
+		}
+	}
 }
+
+.site-header--sticky + .site-content { padding-top: 180px; }
 
 // Site branding
 
