@@ -97,8 +97,7 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color.has-primary-background-color,
 		.entry .entry-content .wp-block-file .wp-block-file__button,
 		.entry .entry-content .wp-block-file.wp-block-file--boxed,
-		.site-top-header,
-		.sites-menu .menu-item.menu-item--selected a {
+		.site-top-header {
 			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 
@@ -147,7 +146,6 @@ function twentynineteen_custom_colors_css() {
 		.archive .page-header .page-title,
 		.search .page-header .page-title,
 		.error404 .page-header .page-title,
-		.sites-menu .menu-item a,
 		.fas,
 		.entry .entry-content .wp-block-list--with-icon li::before,
 		#colophon .widget-column .widget .widget-title {
@@ -184,8 +182,7 @@ function twentynineteen_custom_colors_css() {
 		input[type="datetime"]:focus,
 		input[type="datetime-local"]:focus,
 		input[type="color"]:focus,
-		textarea:focus,
-		.sites-menu .menu-item.menu-item--selected a {
+		textarea:focus {
 			border-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #005db9; */
 		}
 

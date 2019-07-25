@@ -6762,63 +6762,101 @@ a:focus {
   margin: 0 0 0 2px;
 }
 
-.sites-menu {
+/*#mega-menu-wrap-sites #mega-menu-sites li.menu-item--scuola-europea a.mega-menu-link {
+  color: #FFF;
+  border-color: $color__background-button;
+  background-color: $color__background-button;
+}*/
+#mega-menu-wrap-sites .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block {
+  margin-right: 0;
+}
+@media only screen and (min-width: 1168px) {
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item.menu-item--selected a {
+    background-color: transparent;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--scuola-europea a.mega-menu-link {
+    color: #FFF;
+    border-color: #005db9;
+    background-color: #005db9;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--scuola-europea a.mega-menu-link:hover {
+    border-color: #005db9;
+    color: #005db9;
+    background-color: transparent;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--ciclo-materno a.mega-menu-link {
+    color: #FFF;
+    border-color: #a80065;
+    background-color: #a80065;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--ciclo-materno a.mega-menu-link:hover {
+    color: #a80065;
+    border-color: #a80065;
+    background-color: transparent;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--ciclo-primario a.mega-menu-link {
+    color: #FFF;
+    border-color: #00a8a0;
+    background-color: #00a8a0;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--ciclo-primario a.mega-menu-link:hover {
+    color: #00a8a0;
+    border-color: #00a8a0;
+    background-color: transparent;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--ciclo-secondario a.mega-menu-link {
+    color: #FFF;
+    border-color: #00a81c;
+    background-color: #00a81c;
+  }
+  #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item--ciclo-secondario a.mega-menu-link:hover {
+    color: #00a81c;
+    border-color: #00a81c;
+    background-color: transparent;
+  }
+}
+
+/*.sites-menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: none;
-}
-@media only screen and (min-width: 768px) {
-  .sites-menu {
-    display: flex;
-  }
-}
-.sites-menu .menu-item {
-  margin: 0.1rem 0.2rem 0 0;
-  font-size: 0.8888888889em;
-}
-.sites-menu .menu-item a {
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 4px;
-  padding: 0.3rem;
-  line-height: 12px;
-  font-size: 0.7111111111em;
-  height: 100%;
-  width: 100%;
-  display: block;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.sites-menu .menu-item:hover a {
-  color: #FFF;
-  border-width: 1px;
-  border-style: solid;
-}
-.sites-menu .menu-item.menu-item--selected a {
-  color: #FFF;
-  border-color: #005db9;
-  background-color: #005db9;
-}
-.sites-menu .menu-item--scuola-europea a:hover {
-  border-color: #005db9;
-  background-color: #005db9;
-}
-.sites-menu .menu-item--ciclo-materno a:hover {
-  border-color: #a80065;
-  background-color: #a80065;
-}
-.sites-menu .menu-item--ciclo-primario a:hover {
-  border-color: #00a8a0;
-  background-color: #00a8a0;
-}
-.sites-menu .menu-item--ciclo-secondario a:hover {
-  border-color: #00a81c;
-  background-color: #00a81c;
-}
 
+  @include media(tablet) { display: flex; }
+
+  .menu-item {
+    margin: 0.1rem 0.2rem 0 0;
+    font-size: $font__size-sm;
+    a {
+      //color: $color__background-button;
+      //border-color: $color__background-button;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 4px;
+      padding: 0.3rem;
+      line-height: 12px;
+      font-size: $font__size-xs;
+      height: 100%;
+      width: 100%;
+      display: block;
+
+      @include custom-transition(0.2s);
+    }
+    &:hover {
+      a {
+        //color: #FFF;
+        border-width: 1px;
+        border-style: solid;
+      }
+    }
+  }
+}*/
 /** === Footer menu === */
 .footer-navigation {
   margin: 0;
