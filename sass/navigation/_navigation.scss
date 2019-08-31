@@ -44,7 +44,7 @@
   #mega-menu-sites {
     @include media(desktop) {
       li.mega-menu-item {
-        a { @include custom-transition(0.2s); }
+        a { @include custom-transition(0.3s); }
         &.menu-item--selected a {
           //border-color: $color__background-button;
           background-color: transparent;

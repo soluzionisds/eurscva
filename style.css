@@ -6113,7 +6113,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1em;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0;
   text-rendering: optimizeLegibility;
 }
@@ -6126,7 +6126,7 @@ textarea {
   color: #111;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
 
@@ -6318,7 +6318,7 @@ blockquote cite {
 pre {
   font-size: 0.8888888889em;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  line-height: 1.8;
+  line-height: 1.6;
   overflow: auto;
 }
 
@@ -6522,7 +6522,7 @@ ol {
 }
 
 li {
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 li > ul,
@@ -6762,10 +6762,10 @@ a:focus {
 }
 @media only screen and (min-width: 1168px) {
   #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item a {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   #mega-menu-wrap-sites #mega-menu-sites li.mega-menu-item.menu-item--selected a {
     background-color: transparent;
@@ -7286,11 +7286,6 @@ a:focus {
 }
 .site-branding--header {
   padding: 1rem 0rem;
-}
-@media only screen and (min-width: 768px) {
-  .site-branding--header {
-    padding: 1.5rem 0rem;
-  }
 }
 .site-branding__right {
   display: flex;
@@ -9235,6 +9230,11 @@ a:focus {
 .entry .entry-content .wp-block-cover.wp-block-cover--reduced {
   min-height: 350px;
 }
+.entry .entry-content .wp-block-cover-image.wp-block-cover--reduced p,
+.entry .entry-content .wp-block-cover.wp-block-cover--reduced p {
+  line-height: 1.3;
+  font-weight: 500;
+}
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-cover-image,
 .entry .entry-content .wp-block-cover {
@@ -9564,6 +9564,7 @@ a:focus {
 }
 .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks .wp-block-column {
   margin-bottom: 0;
+  flex-basis: 100%;
 }
 .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks .wp-block-column:not(:last-child), .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks .wp-block-column:not(:first-child), .entry .entry-content .wp-block-columns.wp-block-columns--section-blocks .wp-block-column:nth-child(2n) {
   margin-right: 0;

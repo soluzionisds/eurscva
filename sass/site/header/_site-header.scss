@@ -125,7 +125,7 @@
 	}
 	&--header {
 		padding: 1rem 0rem;
-		@include media(tablet) { padding: 1.5rem 0rem; }
+		//@include media(tablet) { padding: 1.5rem 0rem; }
 	}
 
 	//position: relative;
