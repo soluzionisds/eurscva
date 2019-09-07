@@ -8367,20 +8367,23 @@ a:focus {
 --------------------------------------------------------------*/
 .archive .page-header,
 .search .page-header,
-.error404 .page-header {
+.error404 .page-header,
+.no-results .page-header {
   margin: 1rem 1rem calc(3 * 1rem);
 }
 @media only screen and (min-width: 768px) {
   .archive .page-header,
 .search .page-header,
-.error404 .page-header {
+.error404 .page-header,
+.no-results .page-header {
     margin: 1rem calc(5% + 30px);
   }
 }
 @media only screen and (min-width: 1500px) {
   .archive .page-header,
 .search .page-header,
-.error404 .page-header {
+.error404 .page-header,
+.no-results .page-header {
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -8388,14 +8391,16 @@ a:focus {
 }
 .archive .page-header .page-title,
 .search .page-header .page-title,
-.error404 .page-header .page-title {
+.error404 .page-header .page-title,
+.no-results .page-header .page-title {
   color: #005db9;
   display: inline;
   letter-spacing: normal;
 }
 .archive .page-header .page-title:before,
 .search .page-header .page-title:before,
-.error404 .page-header .page-title:before {
+.error404 .page-header .page-title:before,
+.no-results .page-header .page-title:before {
   display: none;
 }
 .archive .page-header .search-term,
@@ -8403,7 +8408,9 @@ a:focus {
 .search .page-header .search-term,
 .search .page-header .page-description,
 .error404 .page-header .search-term,
-.error404 .page-header .page-description {
+.error404 .page-header .page-description,
+.no-results .page-header .search-term,
+.no-results .page-header .page-description {
   display: inherit;
   clear: both;
 }
@@ -8412,7 +8419,9 @@ a:focus {
 .search .page-header .search-term:after,
 .search .page-header .page-description:after,
 .error404 .page-header .search-term:after,
-.error404 .page-header .page-description:after {
+.error404 .page-header .page-description:after,
+.no-results .page-header .search-term:after,
+.no-results .page-header .page-description:after {
   content: ".";
   font-weight: bold;
   color: #767676;

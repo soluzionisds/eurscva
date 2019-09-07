@@ -1,6 +1,7 @@
 .archive .page-header,
 .search .page-header,
-.error404 .page-header {
+.error404 .page-header,
+.no-results .page-header {
 
 	margin: $size__spacing-unit $size__spacing-unit calc(3 * #{$size__spacing-unit});
 
