@@ -10,6 +10,8 @@
 
     // lightbox for PDF
     if ($('.wp-block-file').length > 0) {
+      if ($(window).width() > 1025) {
         $('.wp-block-file').find('a').addClass('fancybox-pdf');
+      }
     }
 })( jQuery );
