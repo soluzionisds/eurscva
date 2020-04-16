@@ -18,7 +18,8 @@ Theme developed for European school of Varese. Theme start from WordPress Twenty
 * `wp-block-list--with-icon---user` List Gutenberg Block: provide a style for UL and LI with user icon
 * `wp-block-list--with-check-icon` List Gutenberg Block: provide a style for UL and LI with check-circle icon
 * `wp-block-file--boxed` File Gutenberg Block: style for download file block
-* `wp-block-cover--reduced` File Cover Block: reduced height
+* `wp-block-cover--reduced` File Cover Block: reduced height.wp-block-group--files
+* `wp-block-group--files` group for qualize `wp-block-file--boxed`
 
 ## FILES CHANGES from Twenty Nineteen v.1.2
 

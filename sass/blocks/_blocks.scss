@@ -729,6 +729,16 @@
 		}
 	}
 
+	//! Group [change] Added style
+	.wp-block-group {
+		&.wp-block-group--files {
+			.wp-block-group__inner-container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+		}
+	}
+
 	//! File
 	.wp-block-file {
 		padding: 0 1rem;
