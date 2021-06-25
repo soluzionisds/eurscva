@@ -375,6 +375,28 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Remove WordPress titles standard prefix.
+ */
+function the_title_trim($title) {
+    $title = attribute_escape($title);
+    $findthese = array(
+        '#Protected: #', // Notice the blank space after Protected:
+        '#Private: #', // Notice again, otherwise the title get pushed.
+		'#Protetto: #',
+		'#Privato: #'
+    );
+    $replacewith = array(
+        '', // What to replace "Protected: " with
+        '', // What to replace "Private: " with
+		'',
+		''
+    );
+    $title = preg_replace($findthese, $replacewith, $title);
+    return $title;
+}
+add_filter('the_title', 'the_title_trim');
+
+/**
  * [changed]
  * Define Blocks for Homepage, disabled
  */

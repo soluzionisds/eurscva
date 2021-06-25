@@ -39,6 +39,7 @@ input[type="search"] {
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
 select { width: 100%; }
 
 select {
@@ -56,8 +57,9 @@ textarea {
 }
 
 form {
-
 	p { margin: $size__spacing-unit 0; }
 	.wpcf7-list-item { margin: 0; }
-
+	&.post-password-form {
+		input[type=submit] { margin: 20px 0; }
+	}
 }
