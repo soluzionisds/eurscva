@@ -884,6 +884,7 @@
 		//! custom Columns
 		&.wp-block-columns--section-blocks {
 			margin: 0 auto;
+			gap:0;
 			@include media(desktop) { width: 98%; }
 			a { text-decoration: none; }
 			.wp-block-column {
